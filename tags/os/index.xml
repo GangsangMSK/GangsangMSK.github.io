@@ -1,12 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>MSK&#39;s playground</title>
-        <link>https://example.com/</link>
-        <description>Hugo theme - LoveIt</description>
+        <title>OS - Tag - MSK&#39;s playground</title>
+        <link>https://example.com/tags/os/</link>
+        <description>OS - Tag - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</lastBuildDate>
-            <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</lastBuildDate><atom:link href="https://example.com/tags/os/" rel="self" type="application/rss+xml" /><item>
     <title>hugo &amp; Github을 사용한 블로그 구축</title>
     <link>https://example.com/makeblogwithhugoandgithub/</link>
     <pubDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</pubDate>
