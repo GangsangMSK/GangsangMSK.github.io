@@ -1,9 +1,18 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>LoveIt</title>
+        <title>MSK&#39;s playground</title>
         <link>https://example.com/</link>
         <description>Hugo theme - LoveIt</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</lastBuildDate>
             <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>FirstPost</title>
+    <link>https://example.com/firstpost/</link>
+    <pubDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://example.com/firstpost/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
