@@ -4,37 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Swift의 DataType - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s datatype"><meta property="og:title" content="Swift의 DataType" />
-<meta property="og:description" content="Swift&#39;s datatype" />
+        <title>Swift의 var과 let - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s var &amp; let"><meta property="og:title" content="Swift의 var과 let" />
+<meta property="og:description" content="Swift&#39;s var &amp; let" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gangsangmsk.github.io/datatype/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-16T18:39:03+09:00" />
-<meta property="article:modified_time" content="2022-09-16T18:39:57+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
+<meta property="og:url" content="https://gangsangmsk.github.io/varlet/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-19T19:01:29+09:00" />
+<meta property="article:modified_time" content="2022-09-19T19:01:29+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Swift의 DataType"/>
-<meta name="twitter:description" content="Swift&#39;s datatype"/>
+<meta name="twitter:title" content="Swift의 var과 let"/>
+<meta name="twitter:description" content="Swift&#39;s var &amp; let"/>
 <meta name="application-name" content="MSK&#39;s playground">
 <meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/datatype/" /><link rel="prev" href="https://gangsangmsk.github.io/makeblogwithhugoandgithub/" /><link rel="next" href="https://gangsangmsk.github.io/varlet/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/varlet/" /><link rel="prev" href="https://gangsangmsk.github.io/datatype/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Swift의 DataType",
+        "headline": "Swift의 var과 let",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/gangsangmsk.github.io\/datatype\/"
-        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  376 ,
-        "url": "https:\/\/gangsangmsk.github.io\/datatype\/","datePublished": "2022-09-16T18:39:03+09:00","dateModified": "2022-09-16T18:39:57+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/gangsangmsk.github.io\/varlet\/"
+        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  139 ,
+        "url": "https:\/\/gangsangmsk.github.io\/varlet\/","datePublished": "2022-09-19T19:01:29+09:00","dateModified": "2022-09-19T19:01:29+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Minsuk Kim"
-            },"description": "Swift's datatype"
+            },"description": "Swift's var \u0026 let"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -100,10 +100,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Swift의 DataType</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Swift의 var과 let</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EB%AC%B8%EB%B2%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 문법</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-16">2022-09-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;376 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;<span id="/datatype/" class="leancloud_visitors" data-flag-title="Swift의 DataType">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-19">2022-09-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;139 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;<span id="/varlet/" class="leancloud_visitors" data-flag-title="Swift의 var과 let">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -113,30 +113,14 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#자료형data-type의-종류">자료형(Data Type)의 종류</a>
-      <ul>
-        <li><a href="#int">Int</a></li>
-        <li><a href="#float--double">Float &amp; Double</a></li>
-        <li><a href="#bool">Bool</a></li>
-        <li><a href="#character">Character</a></li>
-        <li><a href="#string">String</a>
-          <ul>
-            <li><a href="#문자열-보간법string-interpolation">문자열 보간법(string interpolation)</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#var--변수">var / 변수</a></li>
+    <li><a href="#let--상수">let / 상수</a></li>
     <li><a href="#참고자료">참고자료</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="자료형data-type의-종류">자료형(Data Type)의 종류</h2>
-<h3 id="int">Int</h3>
-<p>Integer는 42와 -23과 같은 소수점이 없는 정수이다. 정수는 부호(양수, 0 또는 음수) 또는 부호가 없는(양수 또는 0)이다.</p>
-<p>Swift는 8, 16, 32 및 64비트 형태로 Unsigned Integer를 지원한다. 이 Integer는 C와 유사한 명명 규칙을 따르며, 8비트 Unsigned Integer는 UInt8 유형이고 32비트 부호 있는 정수는 Int32 유형이다. Swift의 모든 유형과 마찬가지로, 이러한 Integer 유형에는 대문자를 사용한다.</p>
-<p>하지만 애플은 특정 크기의 데이터 타입보다는 Int 데이터 타입 사용을 권장한다.</p>
-<pre><code>Int 데이터 타입은 해당 코드가 실행되는 플랫폼에 맞는 정수 크기를 사용한다.
-</code></pre>
-<hr>
+            </div><div class="content" id="content"><h2 id="var--변수">var / 변수</h2>
+<p>변수는 프로그램에서 사용될 데이터를 저장하기 위한 메모리 공간이다.</p>
+<p>변수는 할당된 값의 변경이 가능하다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -144,34 +128,18 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">Int</span> <span class="p">=</span> <span class="p">[</span><span class="err">초깃값</span><span class="p">]</span> <span class="c1">//초깃값 입력 시, Int 생략 가능</span>
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="err">변수명</span> <span class="p">:</span> <span class="err">데이터</span> <span class="err">타입</span> <span class="c1">// 사용법</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">x</span> <span class="p">=</span> <span class="mf">0.0</span><span class="p">,</span>  <span class="n">y</span><span class="p">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">z</span> <span class="p">=</span> <span class="mf">0.0</span> <span class="c1">// ,를 사용하여 여러개의 변수 선언 가능</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="nb">Int32</span><span class="p">.</span><span class="bp">min</span><span class="p">)</span> <span class="c1">//최솟값</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//-2147483648</span>
-</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="nb">Int32</span><span class="p">.</span><span class="bp">max</span><span class="p">)</span> <span class="c1">//최댓값</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//2147483647</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">num</span> <span class="p">=</span> <span class="mi">10</span> <span class="c1">// : Int 생략가능</span>
+</span></span><span class="line"><span class="cl"><span class="n">num</span> <span class="p">=</span> <span class="mi">20</span> <span class="c1">//문제 없음</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>해당하는 자료형의 .min, .max를 이용하면 최솟값과 최대값을 구할 수 있다.</p>
-<h3 id="float--double">Float &amp; Double</h3>
-<p>소수는 3.14159, 0.1 및 -273.15와 같은 소수점을 가진 숫자이다.</p>
-<p>Float와 Double 데이터 타입은 Int 데이터 타입보다 훨씬 더 넓은 범위의 값을 나타내고 저장할 수 있습니다.</p>
-<ul>
-<li>
-<p>Float 데이터 타입은 32비트로 부동 소수점 수를 저장하고, 소수점 6자리까지 정확도를 가집니다.</p>
-</li>
-<li>
-<p>Double 데이터 타비은 64비트로 부동 소수점 수를 저장하고, 소수점 15자리까지 정확도를 가집니다.</p>
-</li>
-</ul>
-<blockquote>
-<p>소수를 표현하는 데이터 타입은 Double이 기본이다.</p>
-</blockquote>
+</div><h2 id="let--상수">let / 상수</h2>
+<p>상수(const)는 데이터 값을 저장하기 위한 메모리 공간을 제공하는 점은 변수와 비슷하나, 한번 할당되면 그 이후로는 값을 변경할 수 없다.</p>
+<p>상수는 코드 내에서 반복적으로 사용하는 값이 있을 경우, 상수에 할당하여 사용하면 유지보수에 도움이 된다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -179,71 +147,30 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">Float</span> <span class="p">=</span> <span class="p">[</span><span class="err">초깃값</span><span class="p">]</span> <span class="c1">//초깃값 입력 시, Float 생략 가능 </span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">Double</span> <span class="p">=</span> <span class="p">[</span><span class="err">초깃값</span><span class="p">]</span> <span class="c1">//초깃값 입력 시, Double 생략 가능</span>
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="err">상수명</span> <span class="p">:</span> <span class="err">데이터</span> <span class="err">타입</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">text</span> <span class="p">:</span> <span class="nb">String</span> <span class="p">=</span> <span class="s">&#34;상수&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">text</span> <span class="p">=</span> <span class="s">&#34;변수&#34;</span> <span class="c1">//에러 발생</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="bool">Bool</h3>
-<p>참 또는 거짓(1 또는 0) 조건을 처리하는 데이터 타입이다.</p>
-<p>Boolean 데이터 타입을 처리하기 위하여 두개의 Boolean 상수 값(true/false)을 사용한다</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">Bool</span> <span class="p">=</span> <span class="p">[</span><span class="kc">true</span><span class="o">/</span><span class="kc">false</span><span class="p">]</span> <span class="c1">//초깃값 입력 시, Bool 생략 가능</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="character">Character</h3>
-<p>문자, 숫자, 문장 부호, 심볼 같은 유니코드(Unicode) 문자 하나를 저장한다.</p>
-<ul>
-<li>Swift에서의 문자들은 문자소 묶음(grapheme cluster)의 형태로 저장한다.
-<ul>
-<li>문자소 묶음은 하나의 문자를 표현하기 위하여 유니코드 코드 값들로 이루어진다.</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">Character</span> <span class="p">=</span> <span class="p">[</span><span class="err">초깃값</span><span class="p">]</span> <span class="c1">//Character 생략불가, 생략 시 String 데이터 타입이 된다.</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="string">String</h3>
-<p>단어나 문장을 구성하는 일련의 문자다.</p>
-<p>저장, 검색, 비교, 문자열 연결, 수정 등의 기능을 포함한다.</p>
-<p>문자열 보간(string interpolation)을 사용하여 문자열과 변수, 상수, 표현식, 함수 호출의 조합으로 만들 수도 있다.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="p">[</span><span class="err">변수명</span><span class="p">]</span> <span class="p">:</span> <span class="nb">String</span> <span class="p">=</span> <span class="p">[</span><span class="err">초기값</span><span class="p">]</span> <span class="c1">//String 생략하여 사용하는 것이 일반적임</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="문자열-보간법string-interpolation">문자열 보간법(string interpolation)</h4>
-<p>문자열 보간법(String Interpolation)은 변수 또는 상수 등의 값을 문자열 내에 나타내고 싶을 때 사용하는데 문자열 내에 (변수나 상수) 의 형태로 표기하면 이를 문자열로 치환해서 넣어 준다. 
-문자열 보간법을 이용해 프로그래머가 원하는 문자열로 치환하려면 변수나 상수 타입을 CustomStringConvertible프로토콜을 준수하는 description프로퍼티로 구현한다.</p>
+</div><blockquote>
+<p>애플은 코드의 효율성과 실행 성능을 높이기 위해서 변수(var)보다는 상수(let) 사용을 권장한다.</p>
+</blockquote>
 <h2 id="참고자료">참고자료</h2>
-<p><a href="https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html" target="_blank" rel="noopener noreffer ">Swift Language Guide</a></p>
+<p><a href="https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html" target="_blank" rel="noopener noreffer ">Swift Language Guide</a></p>
 <p><a href="https://www.youtube.com/watch?v=ct_pOhzeE-U&amp;list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&amp;index=4" target="_blank" rel="noopener noreffer ">Smile Han Youtube - iOS 1주차-3 : Swift 데이터타입, var, let</a></p>
-<p><a href="https://effectivecode.tistory.com/970" target="_blank" rel="noopener noreffer ">Mr.후:티스토리</a></p>
+<p><a href="https://dasony-lib.tistory.com/10" target="_blank" rel="noopener noreffer ">다소니닷넷:티스토리</a></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-09-16&nbsp;<a class="git-hash" href="https://github.com/GangsangMSK/commit/69b2543cb46c47819980aa16ba7fc4946ddc0183" target="_blank" title="commit by GangsangMSK(wjdgudtk1234@gmail.com) 69b2543cb46c47819980aa16ba7fc4946ddc0183: rebuilding site 2022년 9월 16일 금요일 18시 39분 57초 KST">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>69b2543</a></span>
+                <span>Updated on 2022-09-19</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/datatype/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/varlet/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/datatype/" data-title="Swift의 DataType" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/datatype/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/datatype/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/datatype/" data-title="Swift의 DataType"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/varlet/" data-title="Swift의 var과 let" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/varlet/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/varlet/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/varlet/" data-title="Swift의 var과 let"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -255,8 +182,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/makeblogwithhugoandgithub/" class="prev" rel="prev" title="hugo &amp; Github을 사용한 블로그 구축"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>hugo & Github을 사용한 블로그 구축</a>
-            <a href="/varlet/" class="next" rel="next" title="Swift의 var과 let">Swift의 var과 let<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/datatype/" class="prev" rel="prev" title="Swift의 DataType"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Swift의 DataType</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

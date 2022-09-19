@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on MSK&#39;s playground</title>
+    <link>https://gangsangmsk.github.io/about/</link>
+    <description>Recent content in Abouts on MSK&#39;s playground</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
+    <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 19 Sep 2022 18:54:29 +0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduce</title>
+      <link>https://gangsangmsk.github.io/about/introduce/</link>
+      <pubDate>Mon, 19 Sep 2022 18:54:29 +0900</pubDate>
+      <author>wjdgudtk1234@gmail.com (Minsuk Kim)</author>
+      <guid>https://gangsangmsk.github.io/about/introduce/</guid>
+      <description>iOS 앱 개발자를 목표로 공부하고 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
