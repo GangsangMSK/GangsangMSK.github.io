@@ -1,4 +1,4 @@
-# 타입 어노테이션(Type annotation)과 타입 추론(Type inference)
+# [Swift] 타입 어노테이션(Type annotation)과 타입 추론(Type inference)
 
 Swift는 타입 안전(Type safe) 프로그래밍 언어이다. 그로 인해 변수의 타입이 식별되면, 그 변수는 다른 타입의 데이터를 저장하는데 사용할 수 없다. 변수가 선언되 후에도 다른 타입의 데이터를 저장할 수 있는 loosely typed(Ex:JavaScript) 언어와 대조적이다.
 

@@ -5,7 +5,7 @@
         <description>Swift - Tag - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
             <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift/" rel="self" type="application/rss+xml" /><item>
-    <title>타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
+    <title>[Swift] 타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
     <link>https://gangsangmsk.github.io/type_annotationtype_inference/</link>
     <pubDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
@@ -17,7 +17,7 @@
 변수 또는 상수 이름 다음에 타입 선언을 하면 된다. 1 var num : Int = 10 // : Int가 Type annotation 상수를 선언할 때도 타입 어노테이션을 통해 나중에 값을 할당할 수 있다.]]></description>
 </item>
 <item>
-    <title>Swift의 var과 let</title>
+    <title>[Swift] var과 let</title>
     <link>https://gangsangmsk.github.io/varlet/</link>
     <pubDate>Mon, 19 Sep 2022 19:01:29 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
@@ -27,7 +27,7 @@
 1 2 3 4 5 var 변수명 : 데이터 타입 // 사용법 var x = 0.0, y= 0.0, z = 0.0 // ,를 사용하여 여러개의 변수 선언 가능 var num = 10 // : Int 생략가능 num = 20 //문제 없음 let / 상수 상수(const)는 데이터 값을 저장하기 위한 메모리 공간을 제공하는 점은 변수와 비슷하나, 한번 할당되면 그 이후로는 값을 변경할 수 없다.]]></description>
 </item>
 <item>
-    <title>Swift의 DataType</title>
+    <title>[Swift] DataType(자료형)</title>
     <link>https://gangsangmsk.github.io/datatype/</link>
     <pubDate>Fri, 16 Sep 2022 18:39:03 &#43;0900</pubDate>
     <author>Minsuk Kim</author>

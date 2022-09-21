@@ -4,10 +4,22 @@
         <link>https://gangsangmsk.github.io/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 14:50:34 &#43;0900</lastBuildDate>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Sep 2022 13:47:24 &#43;0900</lastBuildDate>
             <atom:link href="https://gangsangmsk.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Swift Practice in 22/09/20</title>
+    <title>[Blog] utterance를 이용한 블로그 댓글 기능 만들기</title>
+    <link>https://gangsangmsk.github.io/makeblogcommentswithutterance/</link>
+    <pubDate>Wed, 21 Sep 2022 13:47:24 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/makeblogcommentswithutterance/</guid>
+    <description><![CDATA[utterance를 사용한 이유 댓글 기능을 구현할 수 있는 여러 종류(disqus, gittalk, giscus 등)의 댓글 플랫폼들이 있지만, 많은 플랫폼 중에 utterances를 선택한 이유는 다음과 같다.
+utterances는 Github 계정 로그인을 통해 댓글을 달고, 댓글이 달리면 알림이 Github Repository 의 Issue 로 올라오는 시스템이여서 댓글이 달리면 메일로 댓글 알림을 받을 수 있다.
+그리고 광고가 없고 가볍다.
+마지막으로, 마크다운 문법을 사용할 수 있다.
+utterances 적용하기 1. Issue(댓글)이 저장될 Repository를 정하거나 생성한다. 나는 기존 블로그용으로 사용하는 GangsangMSK.]]></description>
+</item>
+<item>
+    <title>[Swift Practice] in 22/09/20</title>
     <link>https://gangsangmsk.github.io/220920/</link>
     <pubDate>Tue, 20 Sep 2022 14:50:34 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
@@ -16,7 +28,7 @@
 Swift 공식 문서]]></description>
 </item>
 <item>
-    <title>타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
+    <title>[Swift] 타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
     <link>https://gangsangmsk.github.io/type_annotationtype_inference/</link>
     <pubDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
@@ -28,7 +40,7 @@ Swift 공식 문서]]></description>
 변수 또는 상수 이름 다음에 타입 선언을 하면 된다. 1 var num : Int = 10 // : Int가 Type annotation 상수를 선언할 때도 타입 어노테이션을 통해 나중에 값을 할당할 수 있다.]]></description>
 </item>
 <item>
-    <title>Swift의 var과 let</title>
+    <title>[Swift] var과 let</title>
     <link>https://gangsangmsk.github.io/varlet/</link>
     <pubDate>Mon, 19 Sep 2022 19:01:29 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
@@ -38,7 +50,7 @@ Swift 공식 문서]]></description>
 1 2 3 4 5 var 변수명 : 데이터 타입 // 사용법 var x = 0.0, y= 0.0, z = 0.0 // ,를 사용하여 여러개의 변수 선언 가능 var num = 10 // : Int 생략가능 num = 20 //문제 없음 let / 상수 상수(const)는 데이터 값을 저장하기 위한 메모리 공간을 제공하는 점은 변수와 비슷하나, 한번 할당되면 그 이후로는 값을 변경할 수 없다.]]></description>
 </item>
 <item>
-    <title>Swift의 DataType</title>
+    <title>[Swift] DataType(자료형)</title>
     <link>https://gangsangmsk.github.io/datatype/</link>
     <pubDate>Fri, 16 Sep 2022 18:39:03 &#43;0900</pubDate>
     <author>Minsuk Kim</author>

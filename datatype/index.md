@@ -1,4 +1,4 @@
-# Swift의 DataType
+# [Swift] DataType(자료형)
 
 
 ## 자료형(Data Type)의 종류
