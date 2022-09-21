@@ -1,4 +1,4 @@
-# hugo & Github을 사용한 블로그 구축
+# [Blog] hugo & Github을 사용한 블로그 구축
 
 > ## 개발환경
 * Hardware : Macbook Pro(16-inch,M1,2021)

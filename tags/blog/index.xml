@@ -17,7 +17,7 @@ utterances는 Github 계정 로그인을 통해 댓글을 달고, 댓글이 달�
 utterances 적용하기 1. Issue(댓글)이 저장될 Repository를 정하거나 생성한다. 나는 기존 블로그용으로 사용하는 GangsangMSK.]]></description>
 </item>
 <item>
-    <title>hugo &amp; Github을 사용한 블로그 구축</title>
+    <title>[Blog] hugo &amp; Github을 사용한 블로그 구축</title>
     <link>https://gangsangmsk.github.io/makeblogwithhugoandgithub/</link>
     <pubDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
