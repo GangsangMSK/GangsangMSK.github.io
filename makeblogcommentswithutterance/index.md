@@ -53,6 +53,15 @@ Blog Post <-> Issue Mapping
 
 위와 같이 적용시켜준다.
 
+***
+
+그러면
+
+![5](/images/Blog/MakeBlogCommentsWithUtterance/5.png)
+![6](/images/Blog/MakeBlogCommentsWithUtterance/6.png)
+
+이렇게 Github의 Issue 기능을 사용하는 utterance로 블로그 댓글 기능이 추가된다.
+
 ## 참고자료
 
 [[Github 블로그] utterances 으로 댓글 기능 만들기 (+ disqus 비추후기)](https://ansohxxn.github.io/blog/utterances/)
