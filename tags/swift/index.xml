@@ -4,7 +4,16 @@
         <link>https://gangsangmsk.github.io/tags/swift/</link>
         <description>Swift - Tag - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Sep 2022 17:20:38 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift] Tuple</title>
+    <link>https://gangsangmsk.github.io/tuple/</link>
+    <pubDate>Sun, 25 Sep 2022 17:20:38 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/tuple/</guid>
+    <description><![CDATA[Tuple(튜플) 튜플은 Swift 에서 가장 강력한 기능 중 하나이다. 여러 값을 하나의 개체에 일시적으로 묶는 방법이다. 튜플에는 타입과 상관없이 요소들을 저장할 수 있고, 저장된 값들이 모두 동일한 타입이어야 한다는 제약이 없다. 튜플의 요소들은 다양한 방법들을 이용해 접근할 수 있다.
+인덱스 위치를 참조하여 접근할 수 있다. 1 2 3 4 let myTuple = (10, 12.1, &#34;Hi&#34;) let myString = myTuple.2 print(myString) //Hi 튜플의 요소를 추출하여 번수 또는 상수에 할당하여 사용할 수 있다.]]></description>
+</item>
+<item>
     <title>[Swift] 타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
     <link>https://gangsangmsk.github.io/type_annotationtype_inference/</link>
     <pubDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</pubDate>
