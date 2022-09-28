@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>[Swift] Operator(연산자) - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s Operator"><meta property="og:title" content="[Swift] Operator(연산자)" />
+<meta property="og:description" content="Swift&#39;s Operator" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gangsangmsk.github.io/operator/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-27T16:12:36+09:00" />
+<meta property="article:modified_time" content="2022-09-27T16:12:36+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Swift] Operator(연산자)"/>
+<meta name="twitter:description" content="Swift&#39;s Operator"/>
+<meta name="application-name" content="MSK&#39;s playground">
+<meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/operator/" /><link rel="prev" href="https://gangsangmsk.github.io/anyandanyobject/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[Swift] Operator(연산자)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gangsangmsk.github.io\/operator\/"
+        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  1230 ,
+        "url": "https:\/\/gangsangmsk.github.io\/operator\/","datePublished": "2022-09-27T16:12:36+09:00","dateModified": "2022-09-27T16:12:36+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Minsuk Kim"
+            },"description": "Swift's Operator"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Swift] Operator(연산자)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EB%AC%B8%EB%B2%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 문법</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-27">2022-09-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1230 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#assingnment-operator-기본-할당-연산자">Assingnment Operator (기본 할당 연산자)</a></li>
+    <li><a href="#arithmetic-operators-산술-연산자">Arithmetic Operators (산술 연산자)</a></li>
+    <li><a href="#compound-assignment-operators-복합-할당-연산자">Compound Assignment Operators (복합 할당 연산자)</a>
+      <ul>
+        <li><a href="#increment--decrement-operator-증가--감소-연산자">Increment &amp; Decrement Operator (증가 &amp; 감소 연산자)</a></li>
+      </ul>
+    </li>
+    <li><a href="#comparison-operators-비교-연산자">Comparison Operators (비교 연산자)</a></li>
+    <li><a href="#ternary-conditional-operator-삼항-연산자">Ternary Conditional Operator (삼항 연산자)</a></li>
+    <li><a href="#nil-coalescing-operator-닐-병합-연산자">Nil-Coalescing Operator (닐 병합 연산자)</a></li>
+    <li><a href="#range-operators-범위-연산자">Range Operators (범위 연산자)</a>
+      <ul>
+        <li><a href="#closed-range-operator-닫힌-범위-연산자">Closed Range Operator (닫힌 범위 연산자)</a></li>
+        <li><a href="#half-open-range-operator-반-열린-범위-연산자">Half-Open Range Operator (반 열린 범위 연산자)</a></li>
+        <li><a href="#one-sided-ranges-단방향-범위">One-Sided Ranges (단방향 범위)</a></li>
+      </ul>
+    </li>
+    <li><a href="#logical-operators-논리-연산자">Logical Operators (논리 연산자)</a>
+      <ul>
+        <li><a href="#not-operator-">NOT Operator (!)</a></li>
+        <li><a href="#and-operator-">AND Operator (&amp;&amp;)</a></li>
+        <li><a href="#or-operator-">OR Operator (||)</a></li>
+        <li><a href="#combining-logical-operators-논리-연산자의-결합">Combining Logical Operators (논리 연산자의 결합)</a></li>
+        <li><a href="#explicit-parentheses-명시적-괄호">Explicit Parentheses (명시적 괄호)</a></li>
+      </ul>
+    </li>
+    <li><a href="#참고자료">참고자료</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="assingnment-operator-기본-할당-연산자">Assingnment Operator (기본 할당 연산자)</h2>
+<p>할당 연산자는 두 개의 피연산자를 가진다.</p>
+<p>왼쪽에 있는 피연산자는 값이 할당되는 변수 또는 상수이며, 오른쪽에 있는 피연산자는 할당할 값을 쓴다.</p>
+<p>오른쪽 피연산자는 주로 산술식 또는 논리식을 수행하는 표현식이며, 그 결과는 왼쪽 피연산자인 변수나 상수에 할당한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">a</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">b</span> <span class="p">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="p">=</span> <span class="n">a</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// b에 10이 들어간다.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="p">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">// x는 1이고, y는 2이다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="arithmetic-operators-산술-연산자">Arithmetic Operators (산술 연산자)</h2>
+<p>보통 두 개의 피연산자를 받는 이항(binary) 연산자이다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="o">*</span>	<span class="err">곱셈</span>
+</span></span><span class="line"><span class="cl"><span class="o">/</span> 	<span class="err">나눗셈</span>
+</span></span><span class="line"><span class="cl"><span class="o">+</span> 	<span class="err">덧셈</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> 	<span class="err">뺄셈</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> 	<span class="err">나머지</span> <span class="err">연산</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">=</span> <span class="n">y</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">z</span> <span class="o">-</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 하나의 표현식 안에 여러 개의 연산자를 사용할 수 있음</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>예외에는 값이 음수임을 가리키는 단항 마이너스 연산자(unary negative operator)인 ‘ - ’ 가 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">x</span> <span class="p">=</span> <span class="o">-</span><span class="mi">10</span> <span class="c1">// 변수 x에 -10을 할당하기 위해 사용되는 단항 - 연산자</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// - (단항) 변수 또는 표현식의 값을 음수로 만듦</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="compound-assignment-operators-복합-할당-연산자">Compound Assignment Operators (복합 할당 연산자)</h2>
+<p>C와 마찬가지로, Swift는 할당(=)을 다른 작업과 결합하는 복합 할당 연산자를 제공한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span> <span class="c1">// == x = x + y</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>x += y라는 표현은 a = a + 2의 축약한 것이다. 추가와 할당은 두 작업을 동시에 수행하는 하나의 연산자로 결합할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y를</span> <span class="err">더하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">-=</span> <span class="n">y</span> 	<span class="n">x에서</span> <span class="n">y를</span> <span class="err">빼고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">*=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y를</span> <span class="err">곱하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">/=</span> <span class="n">y</span> 	<span class="n">x를</span> <span class="n">y로</span> <span class="err">나누고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">%=</span> <span class="n">y</span> 	<span class="n">x를</span> <span class="n">y로</span> <span class="err">나눈</span> <span class="err">나머지를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&amp;=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y의</span> <span class="n">bit</span> <span class="n">AND</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">|=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y의</span> <span class="n">bit</span> <span class="n">OR</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="increment--decrement-operator-증가--감소-연산자">Increment &amp; Decrement Operator (증가 &amp; 감소 연산자)</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="c1">// 다음과 같이 사용한다.</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1">// x 변수의 값을 1 증가시킴</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">=</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>  <span class="c1">// x 변수의 값을 1 감소시킴</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// C에서 사용되는 ++, -- 연산자는 Swift 3에서 없어졌다.</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span><span class="o">++</span> <span class="c1">// Cannot find operator &#39;++&#39; in scope; did you mean &#39;+= 1&#39;?</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span><span class="o">--</span> <span class="c1">// Cannot find operator &#39;--&#39; in scope; did you mean &#39;-= 1&#39;?</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//라는 오류가 난다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="comparison-operators-비교-연산자">Comparison Operators (비교 연산자)</h2>
+<p>비교의 결과 값으로 Boolean 값을 반환한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">result</span><span class="p">:</span> <span class="nb">Bool</span><span class="p">?</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">x</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">y</span> <span class="p">=</span> <span class="mi">20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">==</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y가</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">크면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">크거나</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">작다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">작거나</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y가</span> <span class="err">같지</span> <span class="err">않다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="ternary-conditional-operator-삼항-연산자">Ternary Conditional Operator (삼항 연산자)</h2>
+<p>비교 연산을 빠르게 하기 위해 삼항 연산자를 지원한다.</p>
+<blockquote>
+<p>[조건] ? [참 표현식] : [거짓 표현식]</p>
+</blockquote>
+<p>삼항 연산자는 [조건] 부분을 계산하여 참(true) 혹은 거짓(false)을 확인하여 결과가 참이면 [참 표현식] 부분이 실행되며, 거짓이면 [거짓 표현식] 부분을 수행한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">question</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">answer1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">answer2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//삼항 연산자로의 변환</span>
+</span></span><span class="line"><span class="cl"><span class="n">question</span> <span class="p">?</span> <span class="n">answer1</span> <span class="p">:</span> <span class="n">answer2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="nil-coalescing-operator-닐-병합-연산자">Nil-Coalescing Operator (닐 병합 연산자)</h2>
+<p>옵셔널변수 ?? nil일 때 할당되는 값이다.</p>
+<p>옵셔널 변수의 값이 nil이면 ?? 다음 값으로 할당된다.</p>
+<p>옵셔널 변수의 값이 nil이 아니면 언래핑된 값이 나온다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">defaultColor</span> <span class="p">=</span> <span class="s">&#34;black&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">userDefinedColor</span><span class="p">:</span> <span class="nb">String</span><span class="p">?</span> <span class="c1">// defaults to nil</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">myColor</span> <span class="p">=</span> <span class="n">userDefinedColor</span> <span class="p">??</span> <span class="n">defaultColor</span> <span class="c1">// nil이므로 defaultColor인 black으로 할당됨 </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myColor</span><span class="p">)</span> <span class="c1">// black</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">userDefinedColor</span> <span class="p">=</span> <span class="s">&#34;red&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">myColor</span> <span class="p">=</span> <span class="n">userDefinedColor</span> <span class="p">??</span> <span class="n">defaultColor</span> <span class="c1">//nil이 아니므로 언래핑된 red가 할당됨</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myColor</span><span class="p">)</span> <span class="c1">// red</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 중요! optional(red)가 아니다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="range-operators-범위-연산자">Range Operators (범위 연산자)</h2>
+<h3 id="closed-range-operator-닫힌-범위-연산자">Closed Range Operator (닫힌 범위 연산자)</h3>
+<ul>
+<li>
+<p>닫힌 범위 연산자(a&hellip;b)는 a에서 b까지 실행되는 범위를 정의하고 값 a와 b를 포함한다.</p>
+<ul>
+<li>단 a의 값은 b보다 크지 않아야 한다.</li>
+</ul>
+</li>
+<li>
+<p>닫힌 범위 연산자는 for-in 루프와 같이 모든 값을 사용하려는 범위를 반복할 때 유용한다.</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mf">1.</span><span class="p">..</span><span class="mi">5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;</span><span class="si">\(</span><span class="n">index</span><span class="si">)</span><span class="s"> times 5 is </span><span class="si">\(</span><span class="n">index</span> <span class="o">*</span> <span class="mi">5</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 1 times 5 is 5</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 2 times 5 is 10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 3 times 5 is 15</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 4 times 5 is 20</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 5 times 5 is 25</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="half-open-range-operator-반-열린-범위-연산자">Half-Open Range Operator (반 열린 범위 연산자)</h3>
+<ul>
+<li>
+<p>반 열린 범위 연산자(a..&lt;b)는 a에서 b까지 실행되지만 b를 포함하지 않는 범위를 정의한다.</p>
+<ul>
+<li>닫힌 범위 연산자와 마찬가지로, a의 값은 b보다 크지 않아야 한다.</li>
+</ul>
+</li>
+<li>
+<p>첫 번째 값을 포함하지만 최종 값은 포함하지 않기 때문에 반쯤 열려 있다고 한다.</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">names</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;Anna&#34;</span><span class="p">,</span> <span class="s">&#34;Alex&#34;</span><span class="p">,</span> <span class="s">&#34;Brian&#34;</span><span class="p">,</span> <span class="s">&#34;Jack&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">count</span> <span class="p">=</span> <span class="n">names</span><span class="p">.</span><span class="bp">count</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mf">0.</span><span class="p">.&lt;</span><span class="bp">count</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Person </span><span class="si">\(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">)</span><span class="s"> is called </span><span class="si">\(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Person 1 is called Anna</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Person 2 is called Alex</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Person 3 is called Brian</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Person 4 is called Jack</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="one-sided-ranges-단방향-범위">One-Sided Ranges (단방향 범위)</h3>
+<ul>
+<li>
+<p>아래와 같은 형태로 범위의 시작 혹은 끝만 지정해 사용하는 범위 연산자이다.</p>
+</li>
+<li>
+<p>지정한 시작 값 혹은 끝 값은 범위에 포함된다.</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">names</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;A&#34;</span><span class="p">,</span> <span class="s">&#34;B&#34;</span><span class="p">,</span> <span class="s">&#34;C&#34;</span><span class="p">,</span> <span class="s">&#34;D&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">   <span class="k">for</span> <span class="n">name</span> <span class="k">in</span> <span class="n">names</span><span class="p">[</span><span class="mf">2.</span><span class="p">..]</span> <span class="p">{</span>  <span class="c1">//[...2], [..&lt;2] 와 같이도 사용가능 하다.</span>
+</span></span><span class="line"><span class="cl">      <span class="bp">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">   <span class="p">}</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">// C</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// D</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="logical-operators-논리-연산자">Logical Operators (논리 연산자)</h2>
+<h3 id="not-operator-">NOT Operator (!)</h3>
+<ul>
+<li>불리언 값 또는 표현식의 결과를 현재와 반대로 바꿈</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">flag</span> <span class="p">=</span> <span class="kc">true</span> <span class="c1">// 변수는 참</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">secondFlag</span> <span class="p">=</span> <span class="o">!</span><span class="n">flag</span> <span class="c1">// secondFlag는 거짓으로 설정됨</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="and-operator-">AND Operator (&amp;&amp;)</h3>
+<p>논리 AND 연산자(a &amp;&amp; b)는 전체 표현식이 참이 되려면 두 값이 모두 참이어야 하는 논리 표현식을 만든다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">id</span> <span class="p">:</span> <span class="nb">Bool</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">password</span> <span class="p">:</span> <span class="nb">Bool</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">id</span> <span class="o">&amp;&amp;</span> <span class="n">password</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Login success&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Login failed&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = true, password = true 일 경우 Login success</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = true, password = false 일 경우 Login failed</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = false, password = true 일 경우 Login failed</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = false, password = false 일 경우 Login failed</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>첫번 쨰 값이 false 면, 표현식이 true 가 될 수 없기에 두번째 값은 생략될 것이다. 이 것을 <strong>short-circuit evaluation</strong> 이라고 한다.</p>
+<h3 id="or-operator-">OR Operator (||)</h3>
+<p>논리 OR 연산자(a || b)는 전체 표현식이 참이 되려면 두 값 중 하나만 true여야 하는 논리 표현식을 만드는 데 사용합니다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">id</span> <span class="p">:</span> <span class="nb">Bool</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">password</span> <span class="p">:</span> <span class="nb">Bool</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">id</span> <span class="o">||</span> <span class="n">password</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Login success&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Login failed&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = true, password = true 일 경우 Login success</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = true, password = false 일 경우 Login success</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = false, password = true 일 경우 Login success</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// id = false, password = false 일 경우 Login failed</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="combining-logical-operators-논리-연산자의-결합">Combining Logical Operators (논리 연산자의 결합)</h3>
+<p>두 개 이상의 논리 연산자를 결합해 사용할 수 있다.</p>
+<p>왼쪽의 표현이 우선순위가 높아 먼저 계산된다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">enteredDoorCode</span> <span class="o">&amp;&amp;</span> <span class="n">passedRetinaScan</span> <span class="o">||</span> <span class="n">hasDoorKey</span> <span class="o">||</span> <span class="n">knowsOverridePassword</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Welcome!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;ACCESS DENIED&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Prints &#34;Welcome!&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="explicit-parentheses-명시적-괄호">Explicit Parentheses (명시적 괄호)</h3>
+<p>논리 연산자의 적용 우선 순위를 연산자에 맡지기 않고 명시적으로 괄호를 사용해 계산 순서를 지정할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">enteredDoorCode</span> <span class="o">&amp;&amp;</span> <span class="n">passedRetinaScan</span><span class="p">)</span> <span class="o">||</span> <span class="n">hasDoorKey</span> <span class="o">||</span> <span class="n">knowsOverridePassword</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Welcome!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;ACCESS DENIED&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Prints &#34;Welcome!&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>아니 저도 아무것도 모르는데 저 어캄? 저 암것도 모름</p>
+<h2 id="참고자료">참고자료</h2>
+<p><a href="https://www.youtube.com/watch?v=fCutR0YgUng&amp;list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&amp;index=10" target="_blank" rel="noopener noreffer ">Smile Han - iOS 1주차-8 : Swift 연산자</a></p>
+<p><a href="https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html" target="_blank" rel="noopener noreffer ">The Swift Programming Language - Basic Operators</a></p>
+<p><a href="https://developer.apple.com/documentation/swift/operator-declarations" target="_blank" rel="noopener noreffer ">Apple Developer Documentation - Operator Declarations</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-27</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/operator/" data-title="[Swift] Operator(연산자)" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/operator/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/operator/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/operator/" data-title="[Swift] Operator(연산자)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift/">Swift</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/anyandanyobject/" class="prev" rel="prev" title="[Swift] Any &amp; AnyObject"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift] Any & AnyObject</a></div>
+</div>
+<div id="comments"><div id="utterances" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"💬","lightTheme":"github-light","repo":"GangsangMSK/GangsangMSK.github.io"}},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-VJYQH3E7PK', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-VJYQH3E7PK" async></script></body>
+</html>

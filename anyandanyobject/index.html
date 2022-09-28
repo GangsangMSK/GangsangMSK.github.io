@@ -4,37 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>[Swift] Tuple - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s tuple"><meta property="og:title" content="[Swift] Tuple" />
-<meta property="og:description" content="Swift&#39;s tuple" />
+        <title>[Swift] Any &amp; AnyObject - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s Any, AnyObject"><meta property="og:title" content="[Swift] Any &amp; AnyObject" />
+<meta property="og:description" content="Swift&#39;s Any, AnyObject" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gangsangmsk.github.io/tuple/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-25T17:20:38+09:00" />
-<meta property="article:modified_time" content="2022-09-25T22:08:06+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
+<meta property="og:url" content="https://gangsangmsk.github.io/anyandanyobject/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-27T16:08:29+09:00" />
+<meta property="article:modified_time" content="2022-09-27T16:08:29+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[Swift] Tuple"/>
-<meta name="twitter:description" content="Swift&#39;s tuple"/>
+<meta name="twitter:title" content="[Swift] Any &amp; AnyObject"/>
+<meta name="twitter:description" content="Swift&#39;s Any, AnyObject"/>
 <meta name="application-name" content="MSK&#39;s playground">
 <meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/tuple/" /><link rel="prev" href="https://gangsangmsk.github.io/makeblogcommentswithutterance/" /><link rel="next" href="https://gangsangmsk.github.io/optinals/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/anyandanyobject/" /><link rel="prev" href="https://gangsangmsk.github.io/optinals/" /><link rel="next" href="https://gangsangmsk.github.io/operator/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "[Swift] Tuple",
+        "headline": "[Swift] Any \u0026 AnyObject",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/gangsangmsk.github.io\/tuple\/"
-        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  161 ,
-        "url": "https:\/\/gangsangmsk.github.io\/tuple\/","datePublished": "2022-09-25T17:20:38+09:00","dateModified": "2022-09-25T22:08:06+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/gangsangmsk.github.io\/anyandanyobject\/"
+        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  116 ,
+        "url": "https:\/\/gangsangmsk.github.io\/anyandanyobject\/","datePublished": "2022-09-27T16:08:29+09:00","dateModified": "2022-09-27T16:08:29+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Minsuk Kim"
-            },"description": "Swift's tuple"
+            },"description": "Swift's Any, AnyObject"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -100,9 +100,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Swift] Tuple</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Swift] Any & AnyObject</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EB%AC%B8%EB%B2%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 문법</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-25">2022-09-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;161 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-27">2022-09-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;116 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -111,85 +111,88 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#tuple튜플">Tuple(튜플)</a></li>
+    <li><a href="#anyobjectprotocal">AnyObject(protocal)</a></li>
+    <li><a href="#any">Any</a></li>
     <li><a href="#참고자료">참고자료</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="tuple튜플">Tuple(튜플)</h2>
+            </div><div class="content" id="content"><h2 id="anyobjectprotocal">AnyObject(protocal)</h2>
 <ul>
-<li>튜플은 Swift 에서 가장 강력한 기능 중 하나이다.</li>
-<li>여러 값을 하나의 개체에 일시적으로 묶는 방법이다.</li>
-<li>튜플에는 타입과 상관없이 요소들을 저장할 수 있고, 저장된 값들이 모두 동일한 타입이어야 한다는 제약이 없다.</li>
+<li>
+<p>AnyObject can represent an instance of any class type.</p>
+</li>
+<li>
+<p>AnyObject는 범용 타입이고 상속관계가 아니라도 타입 캐스팅 가능한 타입이다.</p>
+</li>
+<li>
+<p>어떤 클래스의 객체도 저장 가능하다.</p>
+</li>
+<li>
+<p>가장 추상화된 최상위 개념이고 Objective-C의 id와 같다.</p>
+</li>
+<li>
+<p>클래스만 허용하며 구조체나 열거형은 허용하지 않는다.</p>
+</li>
 </ul>
-<p>튜플의 요소들은 다양한 방법들을 이용해 접근할 수 있다.</p>
-<hr>
-<ol>
-<li>인덱스 위치를 참조하여 접근할 수 있다.</li>
-</ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">myTuple</span> <span class="p">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">12.1</span><span class="p">,</span> <span class="s">&#34;Hi&#34;</span><span class="p">)</span> 
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">x</span> <span class="p">:</span> <span class="nb">Any</span> <span class="p">=</span> <span class="s">&#34;Hi&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">myString</span> <span class="p">=</span> <span class="n">myTuple</span><span class="p">.</span><span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">//Hi</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<ol start="2">
-<li>튜플의 요소를 추출하여 번수 또는 상수에 할당하여 사용할 수 있다.</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">myTuple</span> <span class="p">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">12.1</span><span class="p">,</span> <span class="s">&#34;Hi&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="p">(</span><span class="n">myInt</span><span class="p">,</span> <span class="n">myFloat</span><span class="p">,</span> <span class="n">myString</span><span class="p">)</span> <span class="p">=</span> <span class="n">myTuple</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type</span><span class="p">(</span><span class="n">of</span><span class="p">:</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Hi String</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="p">(</span><span class="n">myInt2</span><span class="p">,</span> <span class="kc">_</span><span class="p">,</span> <span class="n">myString2</span><span class="p">)</span> <span class="p">=</span> <span class="n">myTuple</span> <span class="c1">//튜플의 값을 선택적으로 추출할 수 있고, 무시하고 싶은 값에 밑줄을 사용하면 된다.</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type</span><span class="p">(</span><span class="n">of</span><span class="p">:</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 10 Int</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">=</span> <span class="mf">3.5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type</span><span class="p">(</span><span class="n">of</span><span class="p">:</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 3.5 Double</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//type을 검사해서 사용</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><hr>
-<ol start="3">
-<li>튜플을 생성할 때 각 값에 이름을 할당하여 사용할 수 있다.</li>
-</ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">myTuple</span> <span class="p">=</span> <span class="p">(</span><span class="bp">count</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">length</span><span class="p">:</span> <span class="mf">12.1</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="s">&#34;Hi&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//튜플에 저장된 값에 할당된 이름은 각 값을 참조하는데 사용된다.</span>
-</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myTuple</span><span class="p">.</span><span class="n">message</span><span class="p">)</span> <span class="c1">//Hi</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<p><strong>튜플의 가장 강력한 점은 함수에서 여러 값들을 한번에 반환하는 것이다.</strong></p>
+</div><h2 id="any">Any</h2>
+<ul>
+<li>
+<p>Any can represent an instance of any type at all, including function types.</p>
+</li>
+<li>
+<p>클래스, 구조체, 열거형, 함수타입도 타입 캐스팅이 가능하다. (AnyObject와 차이점)</p>
+</li>
+</ul>
 <h2 id="참고자료">참고자료</h2>
-<p><a href="https://www.youtube.com/watch?v=n34BiC9TgVI&amp;list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&amp;index=5" target="_blank" rel="noopener noreffer ">Smile Han Youtube - iOS 1주차-4 : Swift Tuple</a></p>
-<p><a href="https://zeddios.tistory.com/238" target="_blank" rel="noopener noreffer ">ZeddiOS - Swift)tuple</a></p>
+<p><a href="https://www.youtube.com/watch?v=t3LGui2HsQE&amp;list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&amp;index=9" target="_blank" rel="noopener noreffer ">Smaile Han - iOS 1주차-7 : Swift문법 Any, AnyObject</a></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-09-25&nbsp;<a class="git-hash" href="https://github.com/GangsangMSK/commit/5227a18191608d93aa7577d927690dc57f126ee7" target="_blank" title="commit by GangsangMSK(wjdgudtk1234@gmail.com) 5227a18191608d93aa7577d927690dc57f126ee7: rebuilding site 2022년 9월 25일 일요일 22시 08분 06초 KST">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>5227a18</a></span>
+                <span>Updated on 2022-09-27</span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/tuple/" data-title="[Swift] Tuple" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/tuple/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/tuple/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/tuple/" data-title="[Swift] Tuple"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/anyandanyobject/" data-title="[Swift] Any &amp; AnyObject" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/anyandanyobject/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/anyandanyobject/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/anyandanyobject/" data-title="[Swift] Any &amp; AnyObject"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -201,8 +204,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/makeblogcommentswithutterance/" class="prev" rel="prev" title="[Blog] utterance를 이용한 블로그 댓글 기능 만들기"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Blog] utterance를 이용한 블로그 댓글 기능 만들기</a>
-            <a href="/optinals/" class="next" rel="next" title="[Swift] Optinal(옵셔널), Optional Binding(옵셔널 바인딩)">[Swift] Optinal(옵셔널), Optional Binding(옵셔널 바인딩)<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/optinals/" class="prev" rel="prev" title="[Swift] Optinal(옵셔널), Optional Binding(옵셔널 바인딩)"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift] Optinal(옵셔널), Optional Binding(옵셔널 바인딩)</a>
+            <a href="/operator/" class="next" rel="next" title="[Swift] Operator(연산자)">[Swift] Operator(연산자)<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="utterances" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
