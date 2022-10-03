@@ -4,9 +4,21 @@
         <link>https://gangsangmsk.github.io/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 27 Sep 2022 16:12:36 &#43;0900</lastBuildDate>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 28 Sep 2022 16:24:19 &#43;0900</lastBuildDate>
             <atom:link href="https://gangsangmsk.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[Swift] ControlFlow(제어문)</title>
+    <link>https://gangsangmsk.github.io/controlflow/</link>
+    <pubDate>Wed, 28 Sep 2022 16:24:19 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/controlflow/</guid>
+    <description><![CDATA[For-In Loops for-in 반복문은 컬렉션 또는 숫자 범위 내에 있는 목록을 반복한다.
+1 2 3 for 상수명 in 컬렉션 또는 범위 { // 실행될 코드 } &lsquo;상수명&rsquo;은 반복문이 돌면서 컬렉션 또는 범위에서 가져온 항목을 담게 될 상수이다.
+&lsquo;컬렉션 또는 범위&rsquo;는 반복문이 반복되면서 현재의 항목을 참조한다.
+문자열 값들의 배열이거나 범위 연산, 문자들로 구성된 문자열일 수 있다.
+1 2 3 4 for index in 1...5 { print(index) } // index라는 이름의 상수에 현재 항목이 할당되면서 시작 // 1 2 3 4 5 1 2 3 4 for _ in 1.]]></description>
+</item>
+<item>
     <title>[Swift] Operator(연산자)</title>
     <link>https://gangsangmsk.github.io/operator/</link>
     <pubDate>Tue, 27 Sep 2022 16:12:36 &#43;0900</pubDate>
@@ -102,20 +114,6 @@ Swift 공식 문서]]></description>
 Swift는 8, 16, 32 및 64비트 형태로 Unsigned Integer를 지원한다. 이 Integer는 C와 유사한 명명 규칙을 따르며, 8비트 Unsigned Integer는 UInt8 유형이고 32비트 부호 있는 정수는 Int32 유형이다. Swift의 모든 유형과 마찬가지로, 이러한 Integer 유형에는 대문자를 사용한다.
 하지만 애플은 특정 크기의 데이터 타입보다는 Int 데이터 타입 사용을 권장한다.
 Int 데이터 타입은 해당 코드가 실행되는 플랫폼에 맞는 정수 크기를 사용한다.]]></description>
-</item>
-<item>
-    <title>[Blog] hugo &amp; Github을 사용한 블로그 구축</title>
-    <link>https://gangsangmsk.github.io/makeblogwithhugoandgithub/</link>
-    <pubDate>Tue, 13 Sep 2022 21:27:41 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/makeblogwithhugoandgithub/</guid>
-    <description><![CDATA[개발환경 Hardware : Macbook Pro(16-inch,M1,2021) OS : macOS Monterey 12.5 Shell : zsh hugo : hugo v0.102.3+extended darwin/arm64 brew : Homebrew 3.6.1 블로그 구축 방법 Github repository 생성
-블로그 구축을 위해
-소스 원본 저장 및 관리용 개발용(Development) repository : blog
-개발용 repository를 빌드한 결과물
-서비스용 repositoty : (username).github.io
-2개의 repository를 생성한다.
-2개의 repository 사용은 블로그를 운영하는 데에 필수는 아니지만, 일괄적으로 Github repository에서 글 작성, 변경이나 버전 관리 등이 편하기에 사용한다.]]></description>
 </item>
 </channel>
 </rss>

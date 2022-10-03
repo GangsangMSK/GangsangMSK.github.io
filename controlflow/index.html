@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>[Swift] ControlFlow(제어문) - MSK&#39;s playground</title><meta name="Description" content="Swift&#39;s Control Flow(if, for, for-in, switch, while etc"><meta property="og:title" content="[Swift] ControlFlow(제어문)" />
+<meta property="og:description" content="Swift&#39;s Control Flow(if, for, for-in, switch, while etc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gangsangmsk.github.io/controlflow/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-28T16:24:19+09:00" />
+<meta property="article:modified_time" content="2022-09-28T16:17:53+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Swift] ControlFlow(제어문)"/>
+<meta name="twitter:description" content="Swift&#39;s Control Flow(if, for, for-in, switch, while etc"/>
+<meta name="application-name" content="MSK&#39;s playground">
+<meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/controlflow/" /><link rel="prev" href="https://gangsangmsk.github.io/operator/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[Swift] ControlFlow(제어문)",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gangsangmsk.github.io\/controlflow\/"
+        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift","wordcount":  698 ,
+        "url": "https:\/\/gangsangmsk.github.io\/controlflow\/","datePublished": "2022-09-28T16:24:19+09:00","dateModified": "2022-09-28T16:17:53+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Minsuk Kim"
+            },"description": "Swift's Control Flow(if, for, for-in, switch, while etc"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Swift] ControlFlow(제어문)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EB%AC%B8%EB%B2%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 문법</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-28">2022-09-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;698 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#for-in-loops">For-In Loops</a></li>
+    <li><a href="#while-loops">While Loops</a></li>
+    <li><a href="#repeat-while">Repeat-While</a></li>
+    <li><a href="#conditonal-statements">Conditonal Statements</a>
+      <ul>
+        <li><a href="#if">IF</a></li>
+        <li><a href="#switch">Switch</a></li>
+        <li><a href="#no-implicit-fallthrough">No Implicit Fallthrough</a></li>
+        <li><a href="#interval-matching">Interval Matching</a></li>
+        <li><a href="#tuples">Tuples</a></li>
+        <li><a href="#where">Where</a></li>
+        <li><a href="#value-bindings">Value Bindings</a></li>
+        <li><a href="#compound-cases">Compound Cases</a></li>
+      </ul>
+    </li>
+    <li><a href="#control-transfer-statements">Control Transfer Statements</a>
+      <ul>
+        <li><a href="#countinue">Countinue</a></li>
+        <li><a href="#break">Break</a>
+          <ul>
+            <li><a href="#break-in-a-loop-statement">Break in a Loop Statement</a></li>
+            <li><a href="#break-in-a-switch-statement">Break in a Switch Statement</a></li>
+          </ul>
+        </li>
+        <li><a href="#fallthrough">Fallthrough</a></li>
+        <li><a href="#labeled-statements">Labeled Statements</a></li>
+      </ul>
+    </li>
+    <li><a href="#early-exit">Early Exit</a></li>
+    <li><a href="#참고자료">참고자료</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="for-in-loops">For-In Loops</h2>
+<p>for-in 반복문은 컬렉션 또는 숫자 범위 내에 있는 목록을 반복한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">for</span> <span class="err">상수명</span> <span class="k">in</span> <span class="err">컬렉션</span> <span class="err">또는</span> <span class="err">범위</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 실행될 코드</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&lsquo;상수명&rsquo;은 반복문이 돌면서 컬렉션 또는 범위에서 가져온 항목을 담게 될 상수이다.</p>
+<p>&lsquo;컬렉션 또는 범위&rsquo;는 반복문이 반복되면서 현재의 항목을 참조한다.</p>
+<p>문자열 값들의 배열이거나 범위 연산, 문자들로 구성된 문자열일 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mf">1.</span><span class="p">..</span><span class="mi">5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="c1">// index라는 이름의 상수에 현재 항목이 할당되면서 시작</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 1 2 3 4 5</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">for</span> <span class="kc">_</span> <span class="k">in</span> <span class="mf">1.</span><span class="p">..</span><span class="mi">5</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">)</span> <span class="c1">// _로 참조체 생략 가능</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Hello Hello Hello Hello Hello</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="c1">// 배열의 요소 접근</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">names</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;A&#34;</span><span class="p">,</span> <span class="s">&#34;B&#34;</span><span class="p">,</span> <span class="s">&#34;C&#34;</span><span class="p">,</span> <span class="s">&#34;D&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">name</span> <span class="k">in</span> <span class="n">names</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// A B C D</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">numberOfLegs</span> <span class="p">=</span> <span class="p">[</span><span class="s">&#34;Spider&#34;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s">&#34;Ant&#34;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s">&#34;Dog&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//dictionary는 key:value형식의 배열</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="n">animalName</span><span class="p">,</span> <span class="n">legCount</span><span class="p">)</span> <span class="k">in</span> <span class="n">numberOfLegs</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;</span><span class="si">\(</span><span class="n">animalName</span><span class="si">)</span><span class="s">s have </span><span class="si">\(</span><span class="n">legCount</span><span class="si">)</span><span class="s"> legs&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Spiders have 8 legs</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Ants have 6 legs</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Dogs have 4 legs</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//dictionary에는 순서가 없어, 출력되는 순서는 매번 다를 수 있다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>아래와 같은 C 스타일의 for문은 Swift 3에서 없어졌다.</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">for</span> <span class="err">초기화</span><span class="p">;</span> <span class="err">조건식</span><span class="p">;</span> <span class="err">증감식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 실행될 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="kd">var</span> <span class="nv">i</span> <span class="p">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span><span class="mi">1</span> <span class="p">{</span>  <span class="c1">// for i in 0..&lt;10 로 수정해야 함</span>
+</span></span><span class="line"><span class="cl">   <span class="bp">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>  <span class="c1">//error: C-style for statement has been removed in Swift 3</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="while-loops">While Loops</h2>
+<p>for 반복문은 몇 번 정도 반복해야 할지를 이미 아는 경우에 사용하기 적합하다.</p>
+<p>어떠한 조건이 되기 전에 대체 몇 번 정도 반복해야 할지를 알 수는 없지만 그 조건을 만족할 때까지는 반복해야 하는 경우 while 반복문 사용한다.</p>
+<p>지정된 조건을 만족할 때까지 작업을 반복한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">while</span> <span class="err">조건식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">myCount</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">myCount</span> <span class="o">&lt;</span> <span class="mi">1000</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">   <span class="n">myCount</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myCount</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// myCount 변수가 1000보다 크지 않을 때까지 반복, 1000이 되는 시점에 반복문이 종료된다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="repeat-while">Repeat-While</h2>
+<p>다른 언어의 do-while문과 유사한 반복문이다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">repeat</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">while</span> <span class="err">조건식</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>While문과는 다르게 최소 한번이상 구문을 실행하고, 조건이 거짓일 때까지 반복한다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">i</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="k">repeat</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">i</span><span class="p">=</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">  <span class="bp">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>   <span class="c1">//출력 결과</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="conditonal-statements">Conditonal Statements</h2>
+<p>Swift에서는 두가지 조건문을 제공한다.</p>
+<h3 id="if">IF</h3>
+<p>다른 프로그래밍 언어들과는 다르게, Swift에서는 if 문 다음의 실행 코드가 한 줄이라도 중괄호({})를 필수적으로 사용해야 한다.</p>
+<p>기본적으로 ‘Boolean 표현식’이 참(true)으로 판단되면 중괄호로 감싸인 코드 실행되고 거짓(false)이면 중괄호로 감싸인 코드는 건너뛴다.</p>
+<p>사용법으로는 아래와 같다.</p>
+<hr>
+<p>if만 사용한 경우</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Boolean 표현식이 참일 경우 수행될 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>if, else를 사용한 경우</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 표현식이 참일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 표현식이 거짓일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>if, else if, else를 사용한 경우</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 표현식이 참일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 선행되는 표현식이 거짓일 경우, 표현식이 참일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 표현식이 거짓일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>if, else if를 사용한 경우</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 표현식이 참일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">if</span> <span class="n">Boolean</span> <span class="err">표현식</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 선행되는 표현식이 거짓일 경우, 표현식이 참일 경우 실행되는 구문</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="switch">Switch</h3>
+<p>Swift에서의 Switch문의 기본 사용방법이다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">some</span> <span class="n">value</span> <span class="n">to</span> <span class="n">consider</span><span class="p">)</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="n">value</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">respond</span> <span class="n">to</span> <span class="n">value</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="p">(</span><span class="n">value</span> <span class="mi">2</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">     <span class="p">(</span><span class="n">value</span> <span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">respond</span> <span class="n">to</span> <span class="n">value</span> <span class="mi">2</span> <span class="n">or</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">otherwise</span><span class="p">,</span> <span class="k">do</span> <span class="n">something</span> <span class="k">else</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">someCharacter</span><span class="p">:</span> <span class="nb">Character</span> <span class="p">=</span> <span class="s">&#34;z&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="n">someCharacter</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="s">&#34;a&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;The first letter of the alphabet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="s">&#34;z&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;The last letter of the alphabet&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">default</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;Some other character&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Prints &#34;The last letter of the alphabet&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="no-implicit-fallthrough">No Implicit Fallthrough</h3>
+<h3 id="interval-matching">Interval Matching</h3>
+<h3 id="tuples">Tuples</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://docs.swift.org/swift-book/_images/coordinateGraphSimple_2x.png"
+        data-srcset="https://docs.swift.org/swift-book/_images/coordinateGraphSimple_2x.png, https://docs.swift.org/swift-book/_images/coordinateGraphSimple_2x.png 1.5x, https://docs.swift.org/swift-book/_images/coordinateGraphSimple_2x.png 2x"
+        data-sizes="auto"
+        alt="https://docs.swift.org/swift-book/_images/coordinateGraphSimple_2x.png"
+        title="1" /></p>
+<h3 id="where">Where</h3>
+<h3 id="value-bindings">Value Bindings</h3>
+<h3 id="compound-cases">Compound Cases</h3>
+<h2 id="control-transfer-statements">Control Transfer Statements</h2>
+<h3 id="countinue">Countinue</h3>
+<h3 id="break">Break</h3>
+<h4 id="break-in-a-loop-statement">Break in a Loop Statement</h4>
+<h4 id="break-in-a-switch-statement">Break in a Switch Statement</h4>
+<h3 id="fallthrough">Fallthrough</h3>
+<h3 id="labeled-statements">Labeled Statements</h3>
+<h2 id="early-exit">Early Exit</h2>
+<h2 id="참고자료">참고자료</h2>
+<p><a href="https://www.youtube.com/watch?v=3QKVkZj_Pzk&amp;list=PLJqaIeuL7nuEEROQDRcy4XxC9gU6SYYXb&amp;index=11" target="_blank" rel="noopener noreffer ">iOS 1주차-9 : 제어문(for-in, while, repeat~while, break, continue, if, guard, switch, where, fallthrough)</a></p>
+<p><a href="https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html" target="_blank" rel="noopener noreffer ">The Swift Programming Language - ControlFlow</a></p>
+<p><a href="https://jusung.gitbook.io/the-swift-language-guide/language-guide/05-control-flow#for-in-for-in-loops" target="_blank" rel="noopener noreffer ">The Swift Programming Language(한국어) - 제어문(ControlFlow)</a></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-09-28&nbsp;<a class="git-hash" href="https://github.com/GangsangMSK/commit/ed1b1e0f5ccdeb0130ce9361abc5e2a781a7debf" target="_blank" title="commit by GangsangMSK(wjdgudtk1234@gmail.com) ed1b1e0f5ccdeb0130ce9361abc5e2a781a7debf: rebuilding site 2022년 9월 28일 수요일 16시 17분 53초 KST">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>ed1b1e0</a></span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/controlflow/" data-title="[Swift] ControlFlow(제어문)" data-hashtags="Swift"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/controlflow/" data-hashtag="Swift"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/controlflow/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/controlflow/" data-title="[Swift] ControlFlow(제어문)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift/">Swift</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/operator/" class="prev" rel="prev" title="[Swift] Operator(연산자)"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift] Operator(연산자)</a></div>
+</div>
+<div id="comments"><div id="utterances" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"💬","lightTheme":"github-light","repo":"GangsangMSK/GangsangMSK.github.io"}},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-VJYQH3E7PK', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-VJYQH3E7PK" async></script></body>
+</html>
