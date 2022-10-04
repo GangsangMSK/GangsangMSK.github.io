@@ -12,7 +12,7 @@
     <pubDate>Wed, 28 Sep 2022 16:24:19 &#43;0900</pubDate>
     <author>Minsuk Kim</author>
     <guid>https://gangsangmsk.github.io/controlflow/</guid>
-    <description><![CDATA[For-In Loops for-in 반복문은 컬렉션 또는 숫자 범위 내에 있는 목록을 반복한다.
+    <description><![CDATA[For-In Loops (For-In문) for-in 반복문은 컬렉션 또는 숫자 범위 내에 있는 목록을 반복한다.
 1 2 3 for 상수명 in 컬렉션 또는 범위 { // 실행될 코드 } &lsquo;상수명&rsquo;은 반복문이 돌면서 컬렉션 또는 범위에서 가져온 항목을 담게 될 상수이다.
 &lsquo;컬렉션 또는 범위&rsquo;는 반복문이 반복되면서 현재의 항목을 참조한다.
 문자열 값들의 배열이거나 범위 연산, 문자들로 구성된 문자열일 수 있다.
