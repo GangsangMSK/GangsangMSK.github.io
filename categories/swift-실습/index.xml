@@ -4,7 +4,15 @@
         <link>https://gangsangmsk.github.io/categories/swift-%EC%8B%A4%EC%8A%B5/</link>
         <description>Swift 실습 - Category - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 20 Sep 2022 14:50:34 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/categories/swift-%EC%8B%A4%EC%8A%B5/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/categories/swift-%EC%8B%A4%EC%8A%B5/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift Practice] in 22/10/04</title>
+    <link>https://gangsangmsk.github.io/221004/</link>
+    <pubDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221004/</guid>
+    <description><![CDATA[if문 1 2 3 4 5 6 7 8 var x = 1 while true { if x &gt; 5 { break } //조건(x&gt;5)이 참일 때 실행(break) print(x) //1 2 3 4 5 x = x + 1 } guard else문 1 2 3 4 5 6 7 8 var x = 1 while true { guard x &lt; 10 else { break }//조건(x&lt;10)이 거짓일 때 실행(break) print(x) //1 2 3 4 5 6 7 8 9, 조건(x&lt;10)이 참일 때 실행 x = x + 1 } if문은 조건 다음에 있는 구문이 참일 때 실행되지만, guard문은 조검 다음에 있는 구문이 거짓일 떄 실행된다.]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/09/20</title>
     <link>https://gangsangmsk.github.io/220920/</link>
     <pubDate>Tue, 20 Sep 2022 14:50:34 &#43;0900</pubDate>
