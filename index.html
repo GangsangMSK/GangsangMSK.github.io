@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.104.2" />
+	<meta name="generator" content="Hugo 0.104.3" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -98,6 +98,11 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="@xxxx" rel="me"></a><a href="https://mastodon.technology/" target="_blank" rel="noopener noreffer me"></a><a href="https://github.com/GangsangMSK" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="mailto:wjdgudtk1234@gmail.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/221011/">[Swift Practice] in 22/10/11</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-11">2022-10-11</time></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EC%8B%A4%EC%8A%B5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 실습</a></span></div><div class="content">Function (함수) 1 2 3 4 5 6 7 8 func add(first x: Int, second y: Int) -&gt; Int { // first, second : argument label // x, y : parameter name print(#function) //add(first:second:) return(x+y) } let a = add(first:10, second:20) //add(first:second:) 1 2 3 4 5 6 func add(_ x: Int, _ y: Int) -&gt; Int { print(#function) //add(first:second:) return(x+y) } let a = add(10, 20) //add(_:_:) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 //Swift 2, 지금은 오류 var myValue = 10 func doubleValue (inout value: Int) -&gt; Int { value += value return(value) } doubleValue(value:&amp;myValue) //Swift 3이후 var myValue = 10 func doubleValue (value: inout Int) -&gt; Int { // Swift 에서 call by reference를 구현하는 방법 inout 사용 value += value return(value) } print(myValue) print(doubleValue(value : &amp;myValue)) // 매개변수에 &amp; 사용 print(myValue) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 func printName(firstName:String, lastName:String?</div><div class="post-footer">
+        <a href="/221011/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift-practice/">Swift Practice</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/221004/">[Swift Practice] in 22/10/04</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-04">2022-10-04</time></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EC%8B%A4%EC%8A%B5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 실습</a></span></div><div class="content">if문 1 2 3 4 5 6 7 8 var x = 1 while true { if x &gt; 5 { break } //조건(x&gt;5)이 참일 때 실행(break) print(x) //1 2 3 4 5 x = x + 1 } guard else문 1 2 3 4 5 6 7 8 var x = 1 while true { guard x &lt; 10 else { break }//조건(x&lt;10)이 거짓일 때 실행(break) print(x) //1 2 3 4 5 6 7 8 9, 조건(x&lt;10)이 참일 때 실행 x = x + 1 } if문은 조건 다음에 있는 구문이 참일 때 실행되지만, guard문은 조검 다음에 있는 구문이 거짓일 떄 실행된다.</div><div class="post-footer">
         <a href="/221004/">Read More</a><div class="post-tags">
@@ -181,18 +186,15 @@ Swift는 8, 16, 32 및 64비트 형태로 Unsigned Integer를 지원한다. 이 
 Int 데이터 타입은 해당 코드가 실행되는 플랫폼에 맞는 정수 크기를 사용한다.</div><div class="post-footer">
         <a href="/datatype/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift/">Swift</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/makeblogwithhugoandgithub/">[Blog] hugo & Github을 사용한 블로그 구축</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-13">2022-09-13</time></span>&nbsp;<span class="post-category">included in <a href="/categories/blog/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Blog</a></span></div><div class="content">개발환경 Hardware : Macbook Pro(16-inch,M1,2021) OS : macOS Monterey 12.5 Shell : zsh hugo : hugo v0.102.3+extended darwin/arm64 brew : Homebrew 3.6.1 블로그 구축 방법 Github repository 생성
-블로그 구축을 위해
-소스 원본 저장 및 관리용 개발용(Development) repository : blog
-개발용 repository를 빌드한 결과물
-서비스용 repositoty : (username).github.io
-2개의 repository를 생성한다.
-2개의 repository 사용은 블로그를 운영하는 데에 필수는 아니지만, 일괄적으로 Github repository에서 글 작성, 변경이나 버전 관리 등이 편하기에 사용한다.</div><div class="post-footer">
-        <a href="/makeblogwithhugoandgithub/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/mac/">Mac</a>,&nbsp;<a href="/tags/linux/">Linux</a>,&nbsp;<a href="/tags/os/">OS</a>,&nbsp;<a href="/tags/blog/">Blog</a></div></div>
-</article></div></div>
+</article><ul class="pagination"><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/2/">2</a>
+                    </span>
+                </li></ul></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
         </div>

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>[Swift Practice] in 22/10/11 - MSK&#39;s playground</title><meta name="Description" content="Swift Practice"><meta property="og:title" content="[Swift Practice] in 22/10/11" />
+<meta property="og:description" content="Swift Practice" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gangsangmsk.github.io/221011/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-11T14:03:53+09:00" />
+<meta property="article:modified_time" content="2022-10-11T14:03:53+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Swift Practice] in 22/10/11"/>
+<meta name="twitter:description" content="Swift Practice"/>
+<meta name="application-name" content="MSK&#39;s playground">
+<meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/221011/" /><link rel="prev" href="https://gangsangmsk.github.io/221004/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[Swift Practice] in 22/10/11",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/gangsangmsk.github.io\/221011\/"
+        },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift Practice","wordcount":  1309 ,
+        "url": "https:\/\/gangsangmsk.github.io\/221011\/","datePublished": "2022-10-11T14:03:53+09:00","dateModified": "2022-10-11T14:03:53+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Minsuk Kim"
+            },"description": "Swift Practice"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="MSK&#39;s playground">MSK&#39;s playground</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/GangsangMSK" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Swift Practice] in 22/10/11</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EC%8B%A4%EC%8A%B5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 실습</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-11">2022-10-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1309 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="function-함수">Function (함수)</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="bp">first</span> <span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">second</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>   
+</span></span><span class="line"><span class="cl">    <span class="c1">// first, second : argument label</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// x, y : parameter name</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="kc">#function</span><span class="p">)</span>  <span class="c1">//add(first:second:)  </span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">a</span> <span class="p">=</span> <span class="n">add</span><span class="p">(</span><span class="bp">first</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="n">second</span><span class="p">:</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//add(first:second:)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="kc">_</span> <span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="kc">_</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>   
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="kc">#function</span><span class="p">)</span>  <span class="c1">//add(first:second:)  </span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">a</span> <span class="p">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//add(_:_:)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="c1">//Swift 2, 지금은 오류</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">myValue</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">doubleValue</span> <span class="p">(</span><span class="kr">inout</span> <span class="n">value</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value</span> <span class="o">+=</span> <span class="n">value</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">doubleValue</span><span class="p">(</span><span class="n">value</span><span class="p">:&amp;</span><span class="n">myValue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl"><span class="c1">//Swift 3이후</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">myValue</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">doubleValue</span> <span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="kr">inout</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span> <span class="c1">// Swift 에서 call by reference를 구현하는 방법 inout 사용</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value</span> <span class="o">+=</span> <span class="n">value</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myValue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">doubleValue</span><span class="p">(</span><span class="n">value</span> <span class="p">:</span> <span class="p">&amp;</span><span class="n">myValue</span><span class="p">))</span> <span class="c1">// 매개변수에 &amp; 사용</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">myValue</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">printName</span><span class="p">(</span><span class="n">firstName</span><span class="p">:</span><span class="nb">String</span><span class="p">,</span> <span class="n">lastName</span><span class="p">:</span><span class="nb">String</span><span class="p">?){</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// if let</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="kd">let</span> <span class="nv">lName</span> <span class="p">=</span> <span class="n">lastName</span> <span class="p">{</span>   <span class="c1">// lastName이 nil이 아니면</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="n">lName</span><span class="p">,</span><span class="n">firstName</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;성이 없네요!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// guard let</span>
+</span></span><span class="line"><span class="cl">    <span class="k">guard</span> <span class="kd">let</span> <span class="nv">lName</span> <span class="p">=</span> <span class="n">lastName</span> <span class="k">else</span> <span class="p">{</span> <span class="c1">// lastName이 nil이면 </span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;성이 없네요!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="c1">// early exit, nil 일경우 return을 만나서 종료된다.</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="n">lName</span><span class="p">,</span><span class="n">firstName</span><span class="p">)</span> <span class="c1">// gurad let 바깥쪽의 구문에서도 내부 매개변수를 사용할 수 있다.</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">printName</span><span class="p">(</span><span class="n">firstName</span><span class="p">:</span> <span class="s">&#34;길동&#34;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">:</span><span class="s">&#34;홍&#34;</span><span class="p">)</span> <span class="c1">// 길동 홍</span>
+</span></span><span class="line"><span class="cl"><span class="n">printName</span><span class="p">(</span><span class="n">firstName</span><span class="p">:</span> <span class="s">&#34;길동&#34;</span><span class="p">,</span> <span class="n">lastName</span><span class="p">:</span><span class="kc">nil</span><span class="p">)</span> <span class="c1">// 성이 없네요!</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">multiplyByTen</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="nb">Int</span><span class="p">?)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">guard</span> <span class="kd">let</span> <span class="nv">number</span> <span class="p">=</span> <span class="n">value</span><span class="p">,</span>  <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="k">else</span> <span class="p">{</span><span class="c1">//조건식(값이 있고 10보다 작은)이 거짓일 때 실행</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;수가 없거나 10보다 크다.&#34;</span><span class="p">)</span> <span class="c1">//거짓 : 값이 없거나 10보다 크면 </span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="n">number</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span> <span class="c1">//조건식이 참일 때 실행, 주의 : number를 여기서도 사용 가능</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">multiplyByTen</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span>   <span class="c1">//30</span>
+</span></span><span class="line"><span class="cl"><span class="n">multiplyByTen</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="n">multiplyByTen</span><span class="p">(</span><span class="n">value</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>   
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">Foundation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">weight</span> <span class="p">=</span> <span class="mf">60.0</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">height</span> <span class="p">=</span> <span class="mf">170.0</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">bmi</span> <span class="p">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="mf">0.0001</span><span class="p">)</span> <span class="c1">// kg/m*m </span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">body</span> <span class="p">=</span> <span class="s">&#34;&#34;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">40</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;3단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">40</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;2단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;1단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mf">18.5</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;정상&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;저체중&#34;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:&#34;</span><span class="p">,</span><span class="nb">String</span><span class="p">(</span><span class="n">format</span><span class="p">:</span><span class="s">&#34;%.1f&#34;</span><span class="p">,</span><span class="n">bmi</span><span class="p">),</span> <span class="s">&#34;판정:</span><span class="si">\(</span><span class="n">body</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span> <span class="c1">// String 사용을 위해 Foundation 를 import 해줘야 한다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>BMI 측정 함수화</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="p">#</span><span class="mi">1</span> <span class="err">리턴</span> <span class="err">후</span> <span class="err">출력</span>
+</span></span><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">Foundation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">calcBMI</span><span class="p">(</span><span class="n">weight</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">String</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">bmi</span> <span class="p">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="mf">0.0001</span><span class="p">)</span> <span class="c1">// kg/m*m </span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">shortenedBmi</span> <span class="p">=</span> <span class="nb">String</span><span class="p">(</span><span class="n">format</span><span class="p">:</span> <span class="s">&#34;%.1f&#34;</span><span class="p">,</span> <span class="n">bmi</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">body</span> <span class="p">=</span> <span class="s">&#34;&#34;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">40</span><span class="p">{</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;3단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">40</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;2단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;1단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mf">18.5</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;정상&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;저체중&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">, 판정:</span><span class="si">\(</span><span class="n">body</span><span class="si">)</span><span class="s">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">calcBMI</span><span class="p">(</span><span class="n">weight</span><span class="p">:</span><span class="mf">62.5</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mf">172.3</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// BMI:21.1, 판정:정상</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="mi">2</span> <span class="err">리턴</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">Foundation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">calcBMI</span><span class="p">(</span><span class="n">weight</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">bmi</span> <span class="p">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="mf">0.0001</span><span class="p">)</span> <span class="c1">// kg/m*m </span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">shortenedBmi</span> <span class="p">=</span> <span class="nb">String</span><span class="p">(</span><span class="n">format</span><span class="p">:</span> <span class="s">&#34;%.1f&#34;</span><span class="p">,</span> <span class="n">bmi</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nv">body</span> <span class="p">=</span> <span class="s">&#34;&#34;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">40</span><span class="p">{</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;3단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">40</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;2단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">30</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;1단계 비만&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="k">if</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mf">18.5</span> <span class="o">&amp;&amp;</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mi">25</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;정상&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span> <span class="p">=</span> <span class="s">&#34;저체중&#34;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">, 판정:</span><span class="si">\(</span><span class="n">body</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">calcBMI</span><span class="p">(</span><span class="n">weight</span><span class="p">:</span><span class="mf">62.5</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mf">172.3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="mi">3</span> <span class="k">switch</span> <span class="k">case</span> <span class="err">문</span> <span class="err">이용</span>
+</span></span><span class="line"><span class="cl"><span class="kd">import</span> <span class="nc">Foundation</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">calcBMI</span> <span class="p">(</span><span class="n">weight</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">,</span> <span class="n">height</span> <span class="p">:</span> <span class="nb">Double</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">//Void형</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">bmi</span> <span class="p">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="mf">0.0001</span><span class="p">)</span> <span class="c1">// kg/m*m </span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">shortenedBmi</span> <span class="p">=</span> <span class="nb">String</span><span class="p">(</span><span class="n">format</span><span class="p">:</span> <span class="s">&#34;%.1f&#34;</span><span class="p">,</span> <span class="n">bmi</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">switch</span> <span class="n">bmi</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mf">0.0</span><span class="p">..&lt;</span><span class="mf">18.5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">,판정:저체중&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mf">18.5</span><span class="p">..&lt;</span><span class="mf">25.0</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">,판정:정상&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mf">25.0</span><span class="p">..&lt;</span><span class="mf">30.0</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">,판정:1단계 비만&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="mf">30.0</span><span class="p">..&lt;</span><span class="mf">40.0</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">,판정:2단계 비만&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">print</span><span class="p">(</span><span class="s">&#34;BMI:</span><span class="si">\(</span><span class="n">shortenedBmi</span><span class="si">)</span><span class="s">,판정:3단계 비만&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">calcBMI</span><span class="p">(</span><span class="n">weight</span><span class="p">:</span><span class="mf">62.5</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mf">172.3</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="first-class-object">first class object</h1>
+<p>swift의 함수는 1급 객체이다.</p>
+<p>1급 객체(first class object) 또는 1급 시민(first class citizen)</p>
+<p>다음 조건을 충족하는 객체를 1급 객체라고 한다.</p>
+<ul>
+<li>
+<p>변수에 저장할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">up</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">down</span><span class="p">(</span><span class="n">num</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">return</span> <span class="n">num</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">toUp</span> <span class="p">=</span> <span class="n">up</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">up</span><span class="p">(</span><span class="n">num</span><span class="p">:</span><span class="mi">10</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">toUp</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">toDown</span> <span class="p">=</span> <span class="n">down</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">down</span><span class="p">(</span><span class="n">num</span><span class="p">:</span><span class="mi">10</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">toDown</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>                    
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>매개변수로 전달할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">upDown</span><span class="p">(</span><span class="n">Fun</span><span class="p">:</span> <span class="p">(</span><span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">{</span>  
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nv">result</span> <span class="p">=</span> <span class="n">Fun</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="bp">print</span><span class="p">(</span><span class="s">&#34;결과 = </span><span class="si">\(</span><span class="n">result</span><span class="si">)</span><span class="s">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">upDown</span><span class="p">(</span><span class="n">Fun</span><span class="p">:</span><span class="n">toUp</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">//toUp(10)</span>
+</span></span><span class="line"><span class="cl"><span class="n">upDown</span><span class="p">(</span><span class="n">Fun</span><span class="p">:</span><span class="n">toDown</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span> <span class="c1">//toDown(10)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>리턴값으로 사용할 수 있다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">decideFun</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">Bool</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="p">(</span><span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">//매개변수형, 리턴형이 함수형             </span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">x</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">toUp</span>   
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">toDown</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">r</span> <span class="p">=</span> <span class="n">decideFun</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="kc">true</span><span class="p">)</span> <span class="c1">// let r = toUp</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">type</span><span class="p">(</span><span class="n">of</span><span class="p">:</span><span class="n">r</span><span class="p">))</span>  <span class="c1">//(Int) -&gt; Int</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">r</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>  <span class="c1">// toUp(10)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">r</span> <span class="p">=</span> <span class="n">decideFun</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="kc">false</span><span class="p">)</span> <span class="c1">// let r = toDown</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">type</span><span class="p">(</span><span class="n">of</span><span class="p">:</span><span class="n">r</span><span class="p">))</span>  <span class="c1">//(Int) -&gt; Int</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">r</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>  <span class="c1">// toDown(10)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<hr>
+<h1 id="closures">Closures</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span><span class="mi">20</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">add1</span> <span class="p">=</span> <span class="p">{(</span><span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="k">in</span> <span class="k">return</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">add1</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="trailing-closure">trailing closure</h1>
+<ul>
+<li>
+<p>클로저가 함수의 마지막 argument라면 마지막 매개변수 이름(handler:)을 생략한 후 함수 소괄호 외부에 클로저를 구현한다.</p>
+</li>
+<li>
+<p>마지막 argument에 closure를 써야할 경우 생략하고 함수 뒤에 클로저를 쓰게 할 수 있다.</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">removeAction</span> <span class="p">=</span> <span class="n">UIAlertAction</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">title</span><span class="p">:</span> <span class="s">&#34;제거&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">style</span><span class="p">:</span> <span class="n">UIAlertAction</span><span class="p">.</span><span class="n">Style</span><span class="p">.</span><span class="n">destructive</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">handler</span><span class="p">:</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">        <span class="n">ACTION</span> <span class="k">in</span> <span class="kc">self</span><span class="p">.</span><span class="n">lampImg</span><span class="p">.</span><span class="n">image</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="n">imgRemove</span>
+</span></span><span class="line"><span class="cl">        <span class="kc">self</span><span class="p">.</span><span class="n">isLampOn</span><span class="p">=</span><span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//trailing closure 일 경우, argument label를 생략 가능하다.</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">onAction</span> <span class="p">=</span> <span class="n">UIAlertAction</span><span class="p">(</span><span class="n">title</span><span class="p">:</span> <span class="s">&#34;On&#34;</span><span class="p">,</span> <span class="n">style</span><span class="p">:</span> <span class="n">UIAlertAction</span><span class="p">.</span><span class="n">Style</span><span class="p">.</span><span class="k">default</span><span class="p">){</span> <span class="n">ACTION</span> <span class="k">in</span> <span class="kc">self</span><span class="p">.</span><span class="n">lampImg</span><span class="p">.</span><span class="n">image</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="n">imgOn</span> <span class="kc">self</span><span class="p">.</span><span class="n">isLampOn</span><span class="p">=</span><span class="kc">true</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>여러 종류의 클로저 스타일</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">multiply</span> <span class="p">=</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span>  <span class="k">in</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">val1</span> <span class="o">*</span> <span class="n">val2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nv">result</span> <span class="p">=</span> <span class="n">multiply</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nv">add</span> <span class="p">=</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span>  <span class="k">in</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="p">(</span><span class="nb">Int</span><span class="p">,</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">cal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="n">add</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="n">multiply</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="k">in</span> <span class="k">return</span> <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span><span class="p">})</span> <span class="c1">//클로저 소스를 매개변수에 직접 작성 </span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Int</span> <span class="k">in</span> <span class="k">return</span> <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span><span class="p">}</span><span class="c1">//trailing closure</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="k">in</span> <span class="k">return</span> <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span><span class="p">})</span> <span class="c1">//리턴형 생략</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{(</span><span class="n">val1</span><span class="p">:</span> <span class="nb">Int</span><span class="p">,</span> <span class="n">val2</span><span class="p">:</span> <span class="nb">Int</span><span class="p">)</span> <span class="k">in</span> <span class="k">return</span> <span class="n">val1</span> <span class="o">+</span> <span class="n">val2</span><span class="p">}</span> <span class="c1">//trailing closure, 리턴형 생략</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="p">{</span><span class="k">return</span> <span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">})</span> <span class="c1">//매개변수 생략하고 단축인자(shorthand argument name)사용, 매개변수를 순서대로 $로 표시</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">}</span> <span class="c1">//trailing closure, 매개변수 생략하고 단축인자사용</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="n">cal</span><span class="p">:</span> <span class="p">{</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">})</span> <span class="c1">//클로저에 리턴값이 있으면 마지막 줄을 리턴하므로 return생략 </span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">math</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span> <span class="p">}</span> <span class="c1">//return 생략</span>
+</span></span><span class="line"><span class="cl"><span class="bp">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-10-11</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://gangsangmsk.github.io/221011/" data-title="[Swift Practice] in 22/10/11" data-hashtags="Swift Practice"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://gangsangmsk.github.io/221011/" data-hashtag="Swift Practice"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Reddit" data-sharer="reddit" data-url="https://gangsangmsk.github.io/221011/"><i class="fab fa-reddit fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://gangsangmsk.github.io/221011/" data-title="[Swift Practice] in 22/10/11"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift-practice/">Swift Practice</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/221004/" class="prev" rel="prev" title="[Swift Practice] in 22/10/04"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift Practice] in 22/10/04</a></div>
+</div>
+<div id="comments"><div id="utterances" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"💬","lightTheme":"github-light","repo":"GangsangMSK/GangsangMSK.github.io"}},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-VJYQH3E7PK', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-VJYQH3E7PK" async></script></body>
+</html>

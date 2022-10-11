@@ -4,9 +4,17 @@
         <link>https://gangsangmsk.github.io/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</lastBuildDate>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</lastBuildDate>
             <atom:link href="https://gangsangmsk.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[Swift Practice] in 22/10/11</title>
+    <link>https://gangsangmsk.github.io/221011/</link>
+    <pubDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221011/</guid>
+    <description><![CDATA[Function (함수) 1 2 3 4 5 6 7 8 func add(first x: Int, second y: Int) -&gt; Int { // first, second : argument label // x, y : parameter name print(#function) //add(first:second:) return(x+y) } let a = add(first:10, second:20) //add(first:second:) 1 2 3 4 5 6 func add(_ x: Int, _ y: Int) -&gt; Int { print(#function) //add(first:second:) return(x+y) } let a = add(10, 20) //add(_:_:) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 //Swift 2, 지금은 오류 var myValue = 10 func doubleValue (inout value: Int) -&gt; Int { value += value return(value) } doubleValue(value:&amp;myValue) //Swift 3이후 var myValue = 10 func doubleValue (value: inout Int) -&gt; Int { // Swift 에서 call by reference를 구현하는 방법 inout 사용 value += value return(value) } print(myValue) print(doubleValue(value : &amp;myValue)) // 매개변수에 &amp; 사용 print(myValue) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 func printName(firstName:String, lastName:String?]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/10/04</title>
     <link>https://gangsangmsk.github.io/221004/</link>
     <pubDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</pubDate>
@@ -101,16 +109,6 @@ Swift 공식 문서]]></description>
 타입 어노테이션(Type annotation)
 변수 또는 상수가 코드 내에서 선언되는 시점에 데이터 타입을 정해주는 경우
 변수 또는 상수 이름 다음에 타입 선언을 하면 된다. 1 var num : Int = 10 // : Int가 Type annotation 상수를 선언할 때도 타입 어노테이션을 통해 나중에 값을 할당할 수 있다.]]></description>
-</item>
-<item>
-    <title>[Swift] var과 let</title>
-    <link>https://gangsangmsk.github.io/varlet/</link>
-    <pubDate>Mon, 19 Sep 2022 19:01:29 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/varlet/</guid>
-    <description><![CDATA[var / 변수 변수는 프로그램에서 사용될 데이터를 저장하기 위한 메모리 공간이다.
-변수는 할당된 값의 변경이 가능하다.
-1 2 3 4 5 var 변수명 : 데이터 타입 // 사용법 var x = 0.0, y= 0.0, z = 0.0 // ,를 사용하여 여러개의 변수 선언 가능 var num = 10 // : Int 생략가능 num = 20 //문제 없음 let / 상수 상수(const)는 데이터 값을 저장하기 위한 메모리 공간을 제공하는 점은 변수와 비슷하나, 한번 할당되면 그 이후로는 값을 변경할 수 없다.]]></description>
 </item>
 </channel>
 </rss>

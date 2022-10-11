@@ -4,7 +4,15 @@
         <link>https://gangsangmsk.github.io/tags/swift-practice/</link>
         <description>Swift Practice - Tag - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift-practice/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift-practice/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift Practice] in 22/10/11</title>
+    <link>https://gangsangmsk.github.io/221011/</link>
+    <pubDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221011/</guid>
+    <description><![CDATA[Function (함수) 1 2 3 4 5 6 7 8 func add(first x: Int, second y: Int) -&gt; Int { // first, second : argument label // x, y : parameter name print(#function) //add(first:second:) return(x+y) } let a = add(first:10, second:20) //add(first:second:) 1 2 3 4 5 6 func add(_ x: Int, _ y: Int) -&gt; Int { print(#function) //add(first:second:) return(x+y) } let a = add(10, 20) //add(_:_:) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 //Swift 2, 지금은 오류 var myValue = 10 func doubleValue (inout value: Int) -&gt; Int { value += value return(value) } doubleValue(value:&amp;myValue) //Swift 3이후 var myValue = 10 func doubleValue (value: inout Int) -&gt; Int { // Swift 에서 call by reference를 구현하는 방법 inout 사용 value += value return(value) } print(myValue) print(doubleValue(value : &amp;myValue)) // 매개변수에 &amp; 사용 print(myValue) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 func printName(firstName:String, lastName:String?]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/10/04</title>
     <link>https://gangsangmsk.github.io/221004/</link>
     <pubDate>Tue, 04 Oct 2022 14:14:41 &#43;0900</pubDate>
