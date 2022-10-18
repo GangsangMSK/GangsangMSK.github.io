@@ -4,7 +4,15 @@
         <link>https://gangsangmsk.github.io/tags/swift-practice/</link>
         <description>Swift Practice - Tag - MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift-practice/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/swift-practice/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift Practice] in 22/10/18</title>
+    <link>https://gangsangmsk.github.io/221018/</link>
+    <pubDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221018/</guid>
+    <description><![CDATA[Class (클래스) 1 2 3 4 class Man{ var age : Int = 1 // Stored property var weight : Double = 3.5 } 1 2 3 4 class Man{ var age : Int? var weight : Double? } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 class Man{ var age : Int? var weight : Double? func display(){ print(&#34;나이는 \(age!), 몸무게는 \(weight!)&#34;) } } var MS : Man = Man() //클래스명 다음의 괄호는 눈에 보이지 않는 default initializer를 나타냄 MS.]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/10/11</title>
     <link>https://gangsangmsk.github.io/221011/</link>
     <pubDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</pubDate>

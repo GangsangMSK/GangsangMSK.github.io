@@ -4,9 +4,17 @@
         <link>https://gangsangmsk.github.io/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</lastBuildDate>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</lastBuildDate>
             <atom:link href="https://gangsangmsk.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>[Swift Practice] in 22/10/18</title>
+    <link>https://gangsangmsk.github.io/221018/</link>
+    <pubDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221018/</guid>
+    <description><![CDATA[Class (클래스) 1 2 3 4 class Man{ var age : Int = 1 // Stored property var weight : Double = 3.5 } 1 2 3 4 class Man{ var age : Int? var weight : Double? } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 class Man{ var age : Int? var weight : Double? func display(){ print(&#34;나이는 \(age!), 몸무게는 \(weight!)&#34;) } } var MS : Man = Man() //클래스명 다음의 괄호는 눈에 보이지 않는 default initializer를 나타냄 MS.]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/10/11</title>
     <link>https://gangsangmsk.github.io/221011/</link>
     <pubDate>Tue, 11 Oct 2022 14:03:53 &#43;0900</pubDate>
@@ -97,18 +105,6 @@ utterances 적용하기 1. Issue(댓글)이 저장될 Repository를 정하거나
     <guid>https://gangsangmsk.github.io/220920/</guid>
     <description><![CDATA[Simple Values 1 2 3 4 5 6 import UIKit var greeting = &#34;Hello, playground&#34; var x = 10 print(x) //10 Control Flow(제어 흐름) Functions and Closures(함수와 클로져) Objects and Classes(객체와 클래스) Enumerations and Structures(열거형과 구조체) Concurrency(동시성) Protocols and Extensions(프로토콜과 확장) Error Handling (오류 처리) Generics Style Guide Swift 스타일 가이드
 Swift 공식 문서]]></description>
-</item>
-<item>
-    <title>[Swift] 타입 어노테이션(Type annotation)과 타입 추론(Type inference)</title>
-    <link>https://gangsangmsk.github.io/type_annotationtype_inference/</link>
-    <pubDate>Mon, 19 Sep 2022 19:51:26 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/type_annotationtype_inference/</guid>
-    <description><![CDATA[Swift는 타입 안전(Type safe) 프로그래밍 언어이다. 그로 인해 변수의 타입이 식별되면, 그 변수는 다른 타입의 데이터를 저장하는데 사용할 수 없다. 변수가 선언되 후에도 다른 타입의 데이터를 저장할 수 있는 loosely typed(Ex:JavaScript) 언어와 대조적이다.
-변수 또는 상수의 식별 방법엔 두 가지가 존재한다.
-타입 어노테이션(Type annotation)
-변수 또는 상수가 코드 내에서 선언되는 시점에 데이터 타입을 정해주는 경우
-변수 또는 상수 이름 다음에 타입 선언을 하면 된다. 1 var num : Int = 10 // : Int가 Type annotation 상수를 선언할 때도 타입 어노테이션을 통해 나중에 값을 할당할 수 있다.]]></description>
 </item>
 </channel>
 </rss>
