@@ -98,6 +98,16 @@
         alt="/images/avatar.png"
         title="/images/avatar.png" /></a></div><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="@xxxx" rel="me"></a><a href="https://mastodon.technology/" target="_blank" rel="noopener noreffer me"></a><a href="https://github.com/GangsangMSK" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="mailto:wjdgudtk1234@gmail.com" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/221101/">[Swift Practice] in 22/11/01</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-11-01">2022-11-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EC%8B%A4%EC%8A%B5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 실습</a></span></div><div class="content">Stored property Stored property 는 초기화를 하지 않으면 에러가 난다.
+초기화 방법으로는 다음 3가지가 있다.
+초기값이 있거나
+init을 이용해서 초기화하거나
+옵셔널 변수(상수)로 선언(자동으로 nil로 초기화)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 class Man{ var age : Int = 1 var weight : Double = 3.5 init(yourAge: Int, yourWeight : Double){ age = yourAge weight = yourWeight } //designated initializer func display(){ print(&#34;나이=\(age), 몸무게=\(weight)&#34;) } class func cM(){ print(&#34;cM은 클래스 메서드입니다.</div><div class="post-footer">
+        <a href="/221101/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift-practice/">Swift Practice</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/221018/">[Swift Practice] in 22/10/18</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-10-18">2022-10-18</time></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EC%8B%A4%EC%8A%B5/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 실습</a></span></div><div class="content">Class (클래스) 1 2 3 4 class Man{ var age : Int = 1 // Stored property var weight : Double = 3.5 } 1 2 3 4 class Man{ var age : Int? var weight : Double? } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 class Man{ var age : Int? var weight : Double? func display(){ print(&#34;나이는 \(age!), 몸무게는 \(weight!)&#34;) } } var MS : Man = Man() //클래스명 다음의 괄호는 눈에 보이지 않는 default initializer를 나타냄 MS.</div><div class="post-footer">
         <a href="/221018/">Read More</a><div class="post-tags">
@@ -175,13 +185,6 @@ Swift 공식 문서</div><div class="post-footer">
 변수 또는 상수가 코드 내에서 선언되는 시점에 데이터 타입을 정해주는 경우
 변수 또는 상수 이름 다음에 타입 선언을 하면 된다. 1 var num : Int = 10 // : Int가 Type annotation 상수를 선언할 때도 타입 어노테이션을 통해 나중에 값을 할당할 수 있다.</div><div class="post-footer">
         <a href="/type_annotationtype_inference/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift/">Swift</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/varlet/">[Swift] var과 let</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Minsuk Kim</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-09-19">2022-09-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/swift-%EB%AC%B8%EB%B2%95/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Swift 문법</a></span></div><div class="content">var / 변수 변수는 프로그램에서 사용될 데이터를 저장하기 위한 메모리 공간이다.
-변수는 할당된 값의 변경이 가능하다.
-1 2 3 4 5 var 변수명 : 데이터 타입 // 사용법 var x = 0.0, y= 0.0, z = 0.0 // ,를 사용하여 여러개의 변수 선언 가능 var num = 10 // : Int 생략가능 num = 20 //문제 없음 let / 상수 상수(const)는 데이터 값을 저장하기 위한 메모리 공간을 제공하는 점은 변수와 비슷하나, 한번 할당되면 그 이후로는 값을 변경할 수 없다.</div><div class="post-footer">
-        <a href="/varlet/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/swift/">Swift</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">

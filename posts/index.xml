@@ -4,7 +4,20 @@
         <link>https://gangsangmsk.github.io/posts/</link>
         <description>All Posts | MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Nov 2022 14:03:53 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift Practice] in 22/11/01</title>
+    <link>https://gangsangmsk.github.io/221101/</link>
+    <pubDate>Tue, 01 Nov 2022 14:03:53 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/221101/</guid>
+    <description><![CDATA[Stored property Stored property 는 초기화를 하지 않으면 에러가 난다.
+초기화 방법으로는 다음 3가지가 있다.
+초기값이 있거나
+init을 이용해서 초기화하거나
+옵셔널 변수(상수)로 선언(자동으로 nil로 초기화)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 class Man{ var age : Int = 1 var weight : Double = 3.5 init(yourAge: Int, yourWeight : Double){ age = yourAge weight = yourWeight } //designated initializer func display(){ print(&#34;나이=\(age), 몸무게=\(weight)&#34;) } class func cM(){ print(&#34;cM은 클래스 메서드입니다.]]></description>
+</item>
+<item>
     <title>[Swift Practice] in 22/10/18</title>
     <link>https://gangsangmsk.github.io/221018/</link>
     <pubDate>Tue, 18 Oct 2022 14:03:53 &#43;0900</pubDate>
@@ -94,15 +107,6 @@ utterances는 Github 계정 로그인을 통해 댓글을 달고, 댓글이 달�
 그리고 광고가 없고 가볍다.
 마지막으로, 마크다운 문법을 사용할 수 있다.
 utterances 적용하기 1. Issue(댓글)이 저장될 Repository를 정하거나 생성한다. 나는 기존 블로그용으로 사용하는 GangsangMSK.]]></description>
-</item>
-<item>
-    <title>[Swift Practice] in 22/09/20</title>
-    <link>https://gangsangmsk.github.io/220920/</link>
-    <pubDate>Tue, 20 Sep 2022 14:50:34 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/220920/</guid>
-    <description><![CDATA[Simple Values 1 2 3 4 5 6 import UIKit var greeting = &#34;Hello, playground&#34; var x = 10 print(x) //10 Control Flow(제어 흐름) Functions and Closures(함수와 클로져) Objects and Classes(객체와 클래스) Enumerations and Structures(열거형과 구조체) Concurrency(동시성) Protocols and Extensions(프로토콜과 확장) Error Handling (오류 처리) Generics Style Guide Swift 스타일 가이드
-Swift 공식 문서]]></description>
 </item>
 </channel>
 </rss>
