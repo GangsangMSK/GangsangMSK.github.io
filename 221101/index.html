@@ -9,15 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gangsangmsk.github.io/221101/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-11-01T14:03:53+09:00" />
-<meta property="article:modified_time" content="2022-11-01T14:03:53+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
-
+<meta property="article:modified_time" content="2022-11-01T16:54:27+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Swift Practice] in 22/11/01"/>
 <meta name="twitter:description" content="Swift Practice"/>
 <meta name="application-name" content="MSK&#39;s playground">
 <meta name="apple-mobile-web-app-title" content="MSK&#39;s playground"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6045934273354310" crossorigin="anonymous"></script><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/221101/" /><link rel="prev" href="https://gangsangmsk.github.io/221018/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://gangsangmsk.github.io/221101/" /><link rel="prev" href="https://gangsangmsk.github.io/221018/" /><link rel="next" href="https://gangsangmsk.github.io/recruit/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><meta name="google-site-verification" content="TqFCKhH4fMrEoDvv-cYvY5wYnB_EtlKBb3kr8fQuwv8" /><script type="application/ld+json">
     {
@@ -29,7 +28,7 @@
             "@type": "WebPage",
             "@id": "https:\/\/gangsangmsk.github.io\/221101\/"
         },"image": ["https:\/\/gangsangmsk.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Swift Practice","wordcount":  1259 ,
-        "url": "https:\/\/gangsangmsk.github.io\/221101\/","datePublished": "2022-11-01T14:03:53+09:00","dateModified": "2022-11-01T14:03:53+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+        "url": "https:\/\/gangsangmsk.github.io\/221101\/","datePublished": "2022-11-01T14:03:53+09:00","dateModified": "2022-11-01T16:54:27+09:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/gangsangmsk.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -698,11 +697,11 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span><span class="p">{</span> 
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="kd">public</span><span class="err"> </span><span class="kd">class</span><span class="err"> </span><span class="n">MyClass</span><span class="p">{</span> 
 </span></span><span class="line"><span class="cl">    <span class="c1">// 모듈의 모든 소스 파일 내에서 접근+정의한 모듈을 가져오는 다른 모듈의 소스파일에서도 접근 가능</span>
-</span></span><span class="line"><span class="cl">    <span class="n">fileprivate</span> <span class="kd">var</span> <span class="nv">name</span> <span class="p">:</span> <span class="nb">String</span> <span class="p">=</span> <span class="s">&#34;Kim&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fileprivate</span><span class="err"> </span><span class="kd">var</span><span class="err"> </span><span class="n">name</span> <span class="p">:</span><span class="err"> </span><span class="nb">String</span><span class="err"> </span><span class="p">=</span><span class="err"> </span><span class="s">&#34;Kim&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//현재 소스 파일 내에서만 사용 가능</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span><span class="err"> </span><span class="kd">func</span><span class="err"> </span><span class="n">play</span><span class="p">()</span> <span class="p">{}</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//현재 블럭 내에서만 사용 가능</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">func</span> <span class="nf">display</span><span class="p">(){}</span> <span class="c1">//internal은 디폴트 속성으로 생략됨</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//해당 모듈의 모든 소스 파일 내에서 사용</span>
@@ -840,7 +839,8 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-11-01</span>
+                <span>Updated on 2022-11-01&nbsp;<a class="git-hash" href="https://github.com/GangsangMSK/commit/a6e08790c590f27109a77f5166146a308d212d02" target="_blank" title="commit by GangsangMSK(wjdgudtk1234@gmail.com) a6e08790c590f27109a77f5166146a308d212d02: rebuilding site 2022년 11월  1일 화요일 16시 54분 27초 KST">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>a6e0879</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
@@ -857,13 +857,14 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/221018/" class="prev" rel="prev" title="[Swift Practice] in 22/10/18"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift Practice] in 22/10/18</a></div>
+    <div class="post-nav"><a href="/221018/" class="prev" rel="prev" title="[Swift Practice] in 22/10/18"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>[Swift Practice] in 22/10/18</a>
+            <a href="/recruit/" class="next" rel="next" title="Recruit">Recruit<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="utterances" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
         </div>
     </footer></div>
 

@@ -10,7 +10,6 @@
 <meta property="og:url" content="https://gangsangmsk.github.io/operator/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-27T16:12:36+09:00" />
 <meta property="article:modified_time" content="2022-09-28T16:17:53+09:00" /><meta property="og:site_name" content="MSK&#39;s playground" />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Swift] Operator(연산자)"/>
 <meta name="twitter:description" content="Swift&#39;s Operator"/>
@@ -222,13 +221,13 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y를</span> <span class="err">더하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">-=</span> <span class="n">y</span> 	<span class="n">x에서</span> <span class="n">y를</span> <span class="err">빼고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">*=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y를</span> <span class="err">곱하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">/=</span> <span class="n">y</span> 	<span class="n">x를</span> <span class="n">y로</span> <span class="err">나누고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">%=</span> <span class="n">y</span> 	<span class="n">x를</span> <span class="n">y로</span> <span class="err">나눈</span> <span class="err">나머지를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&amp;=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y의</span> <span class="n">bit</span> <span class="n">AND</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">|=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y의</span> <span class="n">bit</span> <span class="n">OR</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x에</span> <span class="err">할당</span>
+<pre tabindex="0" class="chroma"><code class="language-Swift" data-lang="Swift"><span class="line"><span class="cl"><span class="n">x</span> <span class="o">+=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">를</span> <span class="err">더하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">-=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">에서</span> <span class="n">y</span><span class="err">를</span> <span class="err">빼고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">*=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">를</span> <span class="err">곱하고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">/=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">를</span> <span class="n">y</span><span class="err">로</span> <span class="err">나누고</span> <span class="err">그</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">%=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">를</span> <span class="n">y</span><span class="err">로</span> <span class="err">나눈</span> <span class="err">나머지를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&amp;=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">의</span> <span class="n">bit</span> <span class="n">AND</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">|=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">의</span> <span class="n">bit</span> <span class="n">OR</span> <span class="err">연산</span> <span class="err">결과를</span> <span class="n">x</span><span class="err">에</span> <span class="err">할당</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="increment--decrement-operator-증가--감소-연산자">Increment &amp; Decrement Operator (증가 &amp; 감소 연산자)</h3>
@@ -280,12 +279,12 @@
 </span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="p">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
 </span></span><span class="line"><span class="cl"><span class="c1">//true</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">==</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y가</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">크면</span> <span class="n">true를</span> <span class="err">반환</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">크거나</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">작다면</span> <span class="n">true를</span> <span class="err">반환</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span> 	<span class="n">x가</span> <span class="n">y보다</span> <span class="err">작거나</span> <span class="err">같다면</span> <span class="n">true를</span> <span class="err">반환</span>
-</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span> 	<span class="n">x와</span> <span class="n">y가</span> <span class="err">같지</span> <span class="err">않다면</span> <span class="n">true를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="p">==</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">가</span> <span class="err">같다면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">가</span> <span class="n">y</span><span class="err">보다</span> <span class="err">크면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">가</span> <span class="n">y</span><span class="err">보다</span> <span class="err">크거나</span> <span class="err">같다면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">가</span> <span class="n">y</span><span class="err">보다</span> <span class="err">작다면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">가</span> <span class="n">y</span><span class="err">보다</span> <span class="err">작거나</span> <span class="err">같다면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">!=</span> <span class="n">y</span> 	<span class="n">x</span><span class="err">와</span> <span class="n">y</span><span class="err">가</span> <span class="err">같지</span> <span class="err">않다면</span> <span class="n">true</span><span class="err">를</span> <span class="err">반환</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="ternary-conditional-operator-삼항-연산자">Ternary Conditional Operator (삼항 연산자)</h2>
@@ -607,7 +606,7 @@
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Minsuk Kim</a></span></div>
         </div>
     </footer></div>
 

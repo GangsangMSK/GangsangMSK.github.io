@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Etc - Tag - MSK&#39;s playground</title>
+        <link>https://gangsangmsk.github.io/tags/etc/</link>
+        <description>Etc - Tag - MSK&#39;s playground</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Jan 2023 02:15:14 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/tags/etc/" rel="self" type="application/rss+xml" /><item>
+    <title>Recruit</title>
+    <link>https://gangsangmsk.github.io/recruit/</link>
+    <pubDate>Wed, 18 Jan 2023 02:15:14 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/recruit/</guid>
+    <description><![CDATA[iOS 키워드를 이용한 사람인 검색 결과 경력, 학력, 지역을 추가한 사람인 검색결과 ]]></description>
+</item>
+</channel>
+</rss>
