@@ -4,7 +4,17 @@
         <link>https://gangsangmsk.github.io/posts/</link>
         <description>All Posts | MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Jan 2023 02:15:14 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Jan 2023 16:37:43 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>[Etc] 기술 면접 예상 질문</title>
+    <link>https://gangsangmsk.github.io/interview/</link>
+    <pubDate>Fri, 20 Jan 2023 16:37:43 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/interview/</guid>
+    <description><![CDATA[OOP란?
+OOP는 현실 세계를 프로그래밍으로 옮겨와 현실 세계의 사물들을 객체로 보고, 그 객체로부터 개발하고자 하는 특징과 기능을 뽑아와 프로그래밍하는 기법입니다. OOP로 코드를 작성하면 재사용성과 변형가능성을 높일 수 있습니다. OOP의 5가지 설계 원칙
+SRP(Single Responsibility Principle, 단일 책임 원칙): 클래스는 단 하나의 목적을 가져야 하며, 클래스를 변경하는 이유는 단 하나의 이유여야 한다. OCP(Open-Closed Principle, 개방 폐쇠 원칙): 클래스는 확장에는 열려 있고, 변경에는 닫혀 있어야 한다. LSP(Liskov Substitution Principle, 리스코프 치환 원칙): 상위 타입의 객체를 하위 타입으로 바꾸어도 프로그램은 일관되게 동작해야 한다.]]></description>
+</item>
+<item>
     <title>[Etc] Recruit</title>
     <link>https://gangsangmsk.github.io/recruit/</link>
     <pubDate>Wed, 18 Jan 2023 02:15:14 &#43;0900</pubDate>
@@ -94,15 +104,6 @@ AnyObject는 범용 타입이고 상속관계가 아니라도 타입 캐스팅 �
     <description><![CDATA[Optional (옵셔널) 값을 반환할 때 오류가 발생할 가능성이 있는 값은 옵셔널 타입이라는 객체로 감싸서 반환한다.
 1 2 3 4 print(Int(&#34;123&#34;)) // Optional(123) 을 출력 print(Int(&#34;Hi&#34;)) // Int(&#34;Hi&#34;) 은 정수 값을 반환할 수 없음, 아무런 값도 반환할 수 없다는 의미로 nil을 반환 Optional Type (옵셔널 타입) Swift에서는 기본 자료형(Int, Double, String 등)은 기본적으로는 nil값을 저장할 수 없지만 옵셔널 타입을 이용하여 nil 값을 저장할 수 있다.
 옵셔널 타입은 변수 또는 상수에 아무런 값이 할당되지 않는 상황을 안전하게 처리하기 위한 방법 제공한다.]]></description>
-</item>
-<item>
-    <title>[Swift] Tuple</title>
-    <link>https://gangsangmsk.github.io/tuple/</link>
-    <pubDate>Sun, 25 Sep 2022 17:20:38 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/tuple/</guid>
-    <description><![CDATA[Tuple(튜플) 튜플은 Swift 에서 가장 강력한 기능 중 하나이다. 여러 값을 하나의 개체에 일시적으로 묶는 방법이다. 튜플에는 타입과 상관없이 요소들을 저장할 수 있고, 저장된 값들이 모두 동일한 타입이어야 한다는 제약이 없다. 튜플의 요소들은 다양한 방법들을 이용해 접근할 수 있다.
-인덱스 위치를 참조하여 접근할 수 있다. 1 2 3 4 let myTuple = (10, 12.1, &#34;Hi&#34;) let myString = myTuple.2 print(myString) //Hi 튜플의 요소를 추출하여 번수 또는 상수에 할당하여 사용할 수 있다.]]></description>
 </item>
 </channel>
 </rss>
