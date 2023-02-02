@@ -1,4 +1,4 @@
-# [Swift] Auto LayoutTest
+# [Swift] Auto Layout Test
 
 
 Auto Layout을 적용한 모습입니다.
