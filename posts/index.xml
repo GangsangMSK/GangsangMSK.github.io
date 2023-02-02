@@ -4,7 +4,16 @@
         <link>https://gangsangmsk.github.io/posts/</link>
         <description>All Posts | MSK&#39;s playground</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wjdgudtk1234@gmail.com (Minsuk Kim)</managingEditor>
-            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 20 Jan 2023 16:37:43 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>wjdgudtk1234@gmail.com (Minsuk Kim)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Feb 2023 03:45:44 &#43;0900</lastBuildDate><atom:link href="https://gangsangmsk.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>[Swift] Auto LayoutTest</title>
+    <link>https://gangsangmsk.github.io/autolayouttest/</link>
+    <pubDate>Fri, 03 Feb 2023 03:45:44 &#43;0900</pubDate>
+    <author>Minsuk Kim</author>
+    <guid>https://gangsangmsk.github.io/autolayouttest/</guid>
+    <description><![CDATA[Auto Layout을 적용한 모습입니다.
+iPhone 14 Pro iPad mini iPhone 8 Plus ]]></description>
+</item>
+<item>
     <title>[Etc] 기술 면접 예상 질문</title>
     <link>https://gangsangmsk.github.io/interview/</link>
     <pubDate>Fri, 20 Jan 2023 16:37:43 &#43;0900</pubDate>
@@ -94,16 +103,6 @@ AnyObject는 범용 타입이고 상속관계가 아니라도 타입 캐스팅 �
 가장 추상화된 최상위 개념이고 Objective-C의 id와 같다.
 클래스만 허용하며 구조체나 열거형은 허용하지 않는다.
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 var x : Any = &#34;Hi&#34; print(x, type(of:x)) // Hi String x = 10 print(x, type(of:x)) // 10 Int x = 3.]]></description>
-</item>
-<item>
-    <title>[Swift] Optinal(옵셔널), Optional Binding(옵셔널 바인딩)</title>
-    <link>https://gangsangmsk.github.io/optinals/</link>
-    <pubDate>Tue, 27 Sep 2022 15:45:28 &#43;0900</pubDate>
-    <author>Minsuk Kim</author>
-    <guid>https://gangsangmsk.github.io/optinals/</guid>
-    <description><![CDATA[Optional (옵셔널) 값을 반환할 때 오류가 발생할 가능성이 있는 값은 옵셔널 타입이라는 객체로 감싸서 반환한다.
-1 2 3 4 print(Int(&#34;123&#34;)) // Optional(123) 을 출력 print(Int(&#34;Hi&#34;)) // Int(&#34;Hi&#34;) 은 정수 값을 반환할 수 없음, 아무런 값도 반환할 수 없다는 의미로 nil을 반환 Optional Type (옵셔널 타입) Swift에서는 기본 자료형(Int, Double, String 등)은 기본적으로는 nil값을 저장할 수 없지만 옵셔널 타입을 이용하여 nil 값을 저장할 수 있다.
-옵셔널 타입은 변수 또는 상수에 아무런 값이 할당되지 않는 상황을 안전하게 처리하기 위한 방법 제공한다.]]></description>
 </item>
 </channel>
 </rss>
